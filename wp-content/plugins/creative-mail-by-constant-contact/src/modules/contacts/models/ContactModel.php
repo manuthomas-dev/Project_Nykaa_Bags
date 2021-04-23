@@ -17,6 +17,7 @@ class ContactModel
     public $optActionBy;
     public $contactAddresses;
     public $eventType;
+    private $birthday;
 
     function __construct()
     {
@@ -122,6 +123,11 @@ class ContactModel
         $this->contactAddresses = $contactAddresses;
     }
 
+    /**
+     * The address model for the contact.
+     *
+     * @return ContactAddressModel
+     */
     public function getContactAddress()
     {
         return $this->contactAddresses;
@@ -135,6 +141,16 @@ class ContactModel
     public function getEventType()
     {
         return $this->eventType;
+    }
+
+    public function get_birthday()
+    {
+        return $this->birthday;
+    }
+
+    public function set_birthday($birthday)
+    {
+        $this->birthday = $birthday;
     }
 
     function toArray()

@@ -49,18 +49,14 @@ class NewsLetterContactFormPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('newsletter_user_confirmed', array($this, 'ceHandleContactNewsletterSubmit'));
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('newsletter_user_confirmed', array($this, 'ceHandleContactNewsletterSubmit'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -116,16 +112,10 @@ class NewsLetterContactFormPluginHandler extends BaseContactFormPluginHandler
         }
 
         if (!empty($backfillArray)) {
-
-            $batches = array_chunk($backfillArray, CE4WP_BATCH_SIZE);
-            foreach ($batches as $batch) {
-                try {
-                    $this->batchUpsertContacts($batch);
-                } catch (\Exception $exception) {
-                    RaygunManager::get_instance()->exception_handler($exception);
-                }
-            }
+            return $backfillArray;
         }
+
+        return null;
     }
 
     function __construct()

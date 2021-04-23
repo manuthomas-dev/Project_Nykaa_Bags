@@ -11,8 +11,6 @@ use CreativeMail\Modules\Contacts\Models\OptActionBy;
 
 class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
 {
-
-    private $emailFields = array('your-email', 'email', 'emailaddress', 'email_address');
     private $firstnameFields = array('firstname', 'first_name', 'name', 'your-name');
     private $lastnameFields = array('lastname', 'last_name');
 
@@ -56,10 +54,17 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
         if (!empty($firstName)) {
             $contactModel->setFirstName($firstName);
         }
-
         $lastName = $this->findValue($contactForm, $this->lastnameFields);
         if (!empty($lastName)) {
             $contactModel->setLastName($lastName);
+        }
+        $phone = $this->findValue($contactForm, $this->phoneFields);
+        if (!empty($phone)) {
+            $contactModel->setPhone($phone);
+        }
+        $birthday = $this->findValue($contactForm, $this->birthdayFields);
+        if (!empty($birthday)) {
+            $contactModel->set_birthday($birthday);
         }
 
         $contactModel->setOptIn(false);
@@ -71,18 +76,14 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('wpcf7_mail_sent', array($this, 'ceHandleContactFormSevenSubmit'));
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('wpcf7_mail_sent', array($this, 'ceHandleContactFormSevenSubmit'));
-        // add hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -105,7 +106,6 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
             }
 
             $results = $cfdb->get_results($cfdbQuery, OBJECT);
-
             $contactsArray = array();
 
             foreach ($results as $formSubmission) {
@@ -113,8 +113,8 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
                 $contactModel = new ContactModel();
                 $contactModel->setOptIn(true);
                 $contactModel->setOptOut(false);
+                $contactModel->setOptActionBy(OptActionBy::Owner);
 
-                $contactModel->setOptActionBy(OptActionBy::Visitor);
                 try {
                     $email = $this->findValueFromDb($form_data, $this->emailFields);
                     if (!empty($email)) {
@@ -128,6 +128,14 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
                     if (!empty($lastname)) {
                         $contactModel->setLastName($lastname);
                     }
+                    $phone = $this->findValueFromDb($form_data, $this->phoneFields);
+                    if (!empty($phone)) {
+                        $contactModel->setPhone($phone);
+                    }
+                    $birthday = $this->findValueFromDb($form_data, $this->birthdayFields);
+                    if (!empty($birthday)) {
+                        $contactModel->set_birthday($birthday);
+                    }
                 } catch (\Exception $exception) {
                     RaygunManager::get_instance()->exception_handler($exception);
                     continue;
@@ -140,13 +148,11 @@ class ContactFormSevenPluginHandler extends BaseContactFormPluginHandler
             }
 
             if (!empty($contactsArray)) {
-
-                $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-                foreach ($batches as $batch) {
-                    $this->batchUpsertContacts($batch);
-                }
+                return $contactsArray;
             }
         }
+
+        return null;
     }
 
     function ceHandleContactFormSevenSubmit($contact_form)

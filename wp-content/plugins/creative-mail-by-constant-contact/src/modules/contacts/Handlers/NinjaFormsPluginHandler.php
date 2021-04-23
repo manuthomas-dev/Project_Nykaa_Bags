@@ -15,16 +15,6 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
         parent::__construct();
     }
 
-    private function getEmailFromForm($fields)
-    {
-        foreach ($fields as $field) {
-            if ($field["key"] == "email" || $field["type"] == "email") {
-                return $field["value"];
-            }
-        }
-        return null;
-    }
-
     private function getNameFromForm($fields)
     {
         $name = null;
@@ -43,6 +33,19 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
         return !empty($name) ? $name : null;
     }
 
+    private function FindFormValues($contact, $fields)
+    {
+        foreach ($fields as $field) {
+            if (in_array($field["key"], $this->emailFields) || in_array($field["type"], $this->emailFields)) {
+                $contact->email = $field["value"];
+            } elseif (in_array($field["key"], $this->phoneFields) || in_array($field["type"], $this->phoneFields)) {
+                $contact->phone = $field["value"];
+            } elseif (in_array($field["key"], $this->birthdayFields) || in_array(strtolower($field["label"]), $this->birthdayFields)) {
+                $contact->birthday = $field["value"];
+            }
+        }
+    }
+
     public function convertToContactModel($contact)
     {
         $contactModel = new ContactModel();
@@ -51,10 +54,10 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
         //optin true on sync, false on form submission
         $contactModel->setOptIn($contact->opt_in);
         $contactModel->setOptOut(false);
-        $contactModel->setOptActionBy(OptActionBy::Owner);
+        $contactModel->setOptActionBy(OptActionBy::Visitor);
 
         if (isset($contact->optinByOwner)) {
-            $contactModel->setOptIn(boolval($contact->optinByOwner));
+            $contactModel->setOptActionBy(OptActionBy::Owner);
         }
 
         $email = $contact->email;
@@ -80,6 +83,12 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
         if (!empty($lastName)) {
             $contactModel->setLastName($lastName);
         }
+        if (!empty($contact->phone)) {
+            $contactModel->setPhone($contact->phone);
+        }
+        if (!empty($contact->birthday)) {
+            $contactModel->set_birthday($contact->birthday);
+        }
 
         return $contactModel;
     }
@@ -88,6 +97,9 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
     {
         //Attempt additional checking for name in an attempt to get custom form fields for names
         $name = null;
+        if (!isset($field_values[$field_key])) {
+            return null;
+        }
         if (strpos($field_key, "full_name") !== false || isset($field_values["name"])) {
             $contact->name = $field_values[$field_key];
             return;
@@ -97,7 +109,7 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
             return;
         }
         if (strpos($field_key, "last_name") !== false || isset($field_values["lastname"])) {
-            $contact->lastname = $field_values[$field_key];
+            $contact->lastName = $field_values[$field_key];
             return;
         }
     }
@@ -106,8 +118,7 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
     {
         try {
             $ninjaContact = new \stdClass();
-            $ninjaContact->email = $this->getEmailFromForm($form_data["fields_by_key"]);
-
+            $this->FindFormValues($ninjaContact, $form_data["fields_by_key"]);
             if (empty($ninjaContact->email)) {
                 return;
             };
@@ -122,18 +133,14 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('ninja_forms_after_submission', array($this, 'ceHandleNinjaFormSubmission'), 10, 1);
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('ninja_forms_after_submission', array($this, 'ceHandleNinjaFormSubmission'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -160,25 +167,34 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
                             $field_settings = $field->get_settings();
                             $field_key = $field_settings["key"];
                             $field_type = $field_settings["type"];
+                            $field_value = isset($field_values[$field_key]) ? $field_values[$field_key] : null; //this prevents undefined index on altered forms
 
                             switch ($field_type) {
                                 case 'email';
-                                    $email = isset($field_values[$field_key]) ? $field_values[$field_key] : null;
+                                    $email = $field_value;
                                     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                                         $contact->email = $email;
                                     }
                                     break;
+                                case 'phone';
+                                    $contact->phone = $field_value;
+                                    break;
+                                case 'date';
+                                    if (in_array(strtolower($field_settings['label']), $this->birthdayFields)) {
+                                        $contact->birthday = $field_value;
+                                    }
+                                    break;
                                 case 'name';
                                 case 'full_name';
-                                    $contact->name = $field_values[$field_key];
+                                    $contact->name = $field_value;
                                     break;
                                 case 'firstname';
                                 case 'first_name';
-                                    $contact->firstName = $field_values[$field_key];
+                                    $contact->firstName = $field_value;
                                     break;
                                 case 'lastname';
                                 case 'last_name';
-                                    $contact->lastname = $field_values[$field_key];
+                                    $contact->lastName = $field_value;
                                     break;
                                 case 'textbox';
                                 case 'text';
@@ -194,7 +210,7 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
                         if (!empty($contact->email) && $contact->email != null) {
                             //set optin by owner on db sync
                             $contact->optinByOwner = true;
-
+                            $contact->opt_in = true;
 
                             //Convert to contactModel and push to the array
                             $contactModel = null;
@@ -219,14 +235,13 @@ class NinjaFormsPluginHandler extends BaseContactFormPluginHandler
 
                 //upsert the contacts
                 if (!empty($contactsArray)) {
-                    $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-                    foreach ($batches as $batch) {
-                        $this->batchUpsertContacts($batch);
-                    }
+                    return $contactsArray;
                 }
             }
         } catch (\Exception $exception) {
             RaygunManager::get_instance()->exception_handler($exception);
         }
+
+        return null;
     }
 }

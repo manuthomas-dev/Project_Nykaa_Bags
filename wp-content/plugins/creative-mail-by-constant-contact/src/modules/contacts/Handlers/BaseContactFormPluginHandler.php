@@ -12,7 +12,13 @@ abstract class BaseContactFormPluginHandler
     public abstract function convertToContactModel($contactForm);
     public abstract function registerHooks();
     public abstract function unregisterHooks();
-    public abstract function syncAction($limit = null);
+    public abstract function get_contacts($limit = null);
+
+    protected $birthdayFields = array('birthday', 'date-of-birth', 'date_of_birth', 'birth_date', 'birth-date');
+    protected $phoneFields = array('phone', 'phone_number', 'telephone', 'tel', 'tel-number', 'tel_number', 'mobile_number');
+    protected $emailFields = array('your-email', 'email', 'e-mail', 'emailaddress', 'email_address', 'email address', 'email-address', 'e-mail address');
+
+
 
     public function upsertContact($model)
     {

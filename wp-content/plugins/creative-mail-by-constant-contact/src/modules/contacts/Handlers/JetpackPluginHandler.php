@@ -43,7 +43,12 @@ class JetpackPluginHandler extends BaseContactFormPluginHandler
         if (!empty($lastName)) {
             $contactModel->setLastName($lastName);
         }
-
+        if (!empty($contact->phone)) {
+            $contactModel->setPhone($contact->phone);
+        }
+        if (!empty($contact->birthday)) {
+            $contactModel->set_birthday($contact->birthday);
+        }
         return $contactModel;
     }
 
@@ -83,18 +88,14 @@ class JetpackPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('grunion_after_message_sent', array($this, 'ceHandleJetpackFormSubmission'), 10, 7);
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('grunion_after_message_sent', array($this, 'ceHandleJetpackFormSubmission'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -106,6 +107,8 @@ class JetpackPluginHandler extends BaseContactFormPluginHandler
         ) {
             $authorRegex = '/(?:^AUTHOR: )(.*)/mi';
             $authorMailRegex = '/(?:^AUTHOR EMAIL: )(.*)/mi';
+            $additionalFieldsRegex = '/(?:^\s{4})\[\d_(.*)\](?:.*;\s)(.*)/mi';
+
             $consentRegex = '/(?:\[email_marketing_consent] =&gt; )(.*)/mi';
             $contactsArray = array();
 
@@ -150,6 +153,18 @@ class JetpackPluginHandler extends BaseContactFormPluginHandler
 
                     $contact->opt_in = boolval($consentValue);
 
+                    preg_match_all($additionalFieldsRegex, $feedbackHtml, $additionalFieldMatches);
+                    if (count($additionalFieldMatches) > 1) {
+                        foreach ($additionalFieldMatches[1] as $index => $label) {
+                            $fieldValue = $additionalFieldMatches[2][$index];
+                            if (in_array(strtolower($label), $this->phoneFields)) {
+                                $contact->phone = $fieldValue;
+                            } elseif (in_array(strtolower($label), $this->birthdayFields)) {
+                                $contact->birthday = $fieldValue;
+                            }
+                        }
+                    }
+
                     //Convert to contactModel and push to the array
                     $contactModel = null;
                     try {
@@ -173,15 +188,10 @@ class JetpackPluginHandler extends BaseContactFormPluginHandler
 
             //upsert the contacts
             if (!empty($contactsArray)) {
-                $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-                foreach ($batches as $batch) {
-                    try {
-                        $this->batchUpsertContacts($batch);
-                    } catch (\Exception $exception) {
-                        RaygunManager::get_instance()->exception_handler($exception);
-                    }
-                }
+                return $contactsArray;
             }
         }
+
+        return null;
     }
 }

@@ -62,8 +62,22 @@ class WpFormsPluginHandler extends BaseContactFormPluginHandler
             }
         }
 
+        $phoneField = $this->get_form_type_field($formData, 'phone');
+        if (!empty($phoneField) && array_key_exists('value', $phoneField)) {
+            if (!empty($phoneField['value'])) {
+                $contactModel->setPhone($phoneField['value']);
+            }
+        }
+
+        $dateField = $this->get_form_type_field($formData, 'date-time');
+        if (!empty($dateField) && array_key_exists('date', $dateField)) {
+            if (!empty($dateField['date']) && in_array(strtolower($dateField['name']), $this->birthdayFields)) {
+                $contactModel->set_birthday($dateField['date']);
+            }
+        }
+
         $consentField = $this->get_form_type_field($formData, "gdpr-checkbox");
-        if ($this->isNotNullOrEmpty($consentField) && array_key_exists('value', $consentField) && $consentField) {
+        if (!empty($consentField) && array_key_exists('value', $consentField) && $consentField) {
             //If a gdpr checkbox is present it is required before submitting
             //The value is a string like "I consent to having this website store my information . . . " instead of a bool
             //Will assume people won't alter or change this to be the other way around so having this value == consent
@@ -78,8 +92,7 @@ class WpFormsPluginHandler extends BaseContactFormPluginHandler
     {
         try {
             $this->upsertContact($this->convertToContactModel($fields));
-        }
-        catch (\Exception $exception) {
+        } catch (\Exception $exception) {
             RaygunManager::get_instance()->exception_handler($exception);
         }
     }
@@ -88,7 +101,6 @@ class WpFormsPluginHandler extends BaseContactFormPluginHandler
     {
         // https://wpforms.com/developers/wpforms_process_complete/
         add_action('wpforms_process_complete', array($this, 'ceHandleWpFormsProcessComplete'), 10, 4);
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
@@ -96,7 +108,7 @@ class WpFormsPluginHandler extends BaseContactFormPluginHandler
         remove_action('wpforms_process_complete', array($this, 'ceHandleWpFormsProcessComplete'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -136,16 +148,11 @@ class WpFormsPluginHandler extends BaseContactFormPluginHandler
             }
 
             if (!empty($contactsArray)) {
-                $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-                foreach ($batches as $batch) {
-                    try {
-                        $this->batchUpsertContacts($batch);
-                    } catch (\Exception $exception) {
-                        RaygunManager::get_instance()->exception_handler($exception);
-                    }
-                }
+                return $contactsArray;
             }
         }
+
+        return null;
     }
 
     function __construct()

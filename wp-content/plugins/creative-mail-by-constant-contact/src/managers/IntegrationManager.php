@@ -5,6 +5,7 @@ namespace CreativeMail\Managers;
 
 use CreativeMail\Helpers\OptionsHelper;
 use CreativeMail\Integrations\Integration;
+use CreativeMail\Modules\Contacts\Handlers\BlueHostBuilderPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\ContactFormSevenPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\ElementorPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\GravityFormsPluginHandler;
@@ -14,7 +15,6 @@ use CreativeMail\Modules\Contacts\Handlers\WpFormsPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\JetpackPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\NinjaFormsPluginHandler;
 use CreativeMail\Modules\Contacts\Handlers\CalderaPluginHandler;
-use CreativeMail\Modules\Contacts\Processes\ContactUploadProcess;
 use ReflectionClass;
 
 /**
@@ -42,10 +42,11 @@ class IntegrationManager
             new Integration('newsletter', 'Newsletter', 'newsletter/plugin.php', NewsLetterContactFormPluginHandler::class, false),
             new Integration('wpforms', 'WPForms', 'wpforms/wpforms.php', WpFormsPluginHandler::class, false, 'https://wpforms.com/'),
             new Integration('wpformslite', 'WPForms Lite', 'wpforms-lite/wpforms.php', WpFormsPluginHandler::class, true, '/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=wpforms-lite&TB_iframe=true&width=772&height=1144'),
-            new Integration('gravityforms', 'GravityForms', 'gravityforms/gravityforms.php', GravityFormsPluginHandler::class, false, 'https://www.gravityforms.com/'),
+            new Integration('gravityforms', 'Gravity Forms', 'gravityforms/gravityforms.php', GravityFormsPluginHandler::class, false, 'https://www.gravityforms.com/'),
             new Integration('elementor', 'Elementor', 'elementor/elementor.php', ElementorPluginHandler::class, false),
-            new Integration('ninjaforms', 'Ninja forms', 'ninja-forms/ninja-forms.php', NinjaFormsPluginHandler::class, false, '/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=ninja-forms&TB_iframe=true&width=772&height=1144'),
-            new Integration('caldera', 'Caldera Forms', 'caldera-forms/caldera-core.php', CalderaPluginHandler::class, false, '/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=caldera-forms&TB_iframe=true&width=772&height=1144')
+            new Integration('ninjaforms', 'Ninja Forms', 'ninja-forms/ninja-forms.php', NinjaFormsPluginHandler::class, false, '/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=ninja-forms&TB_iframe=true&width=772&height=1144'),
+            new Integration('caldera', 'Caldera Forms', 'caldera-forms/caldera-core.php', CalderaPluginHandler::class, false, '/wordpress/wp-admin/plugin-install.php?tab=plugin-information&plugin=caldera-forms&TB_iframe=true&width=772&height=1144'),
+            new Integration('bluehost', 'Bluehost Builder', 'wb4wp-wordpress-plugin-bluehost/wb4wp-plugin.php', BlueHostBuilderPluginHandler::class, false, 'https://www.bluehost.com/')
         );
     }
 
@@ -128,7 +129,7 @@ class IntegrationManager
         $this->remove_hooks();
         $this->add_hooks();
 
-        do_action(CE4WP_SYNCHRONIZE_ACTION, 250);
+        do_action(CE4WP_SYNCHRONIZE_ACTION);
     }
 
     /**

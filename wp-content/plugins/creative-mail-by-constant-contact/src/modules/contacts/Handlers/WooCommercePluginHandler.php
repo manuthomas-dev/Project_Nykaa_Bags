@@ -52,6 +52,10 @@ class WooCommercePluginHandler extends BaseContactFormPluginHandler
                 $contactModel->setOptOut(false);
             }
 
+            if (!empty($products_detail["_billing_phone"])) {
+                $contactModel->setPhone($products_detail["_billing_phone"][0]);
+            }
+
             $checkbox_value = null;
 
             if (!empty($_POST[self::CHECKOUT_CONSENT_CHECKBOX_ID])) {
@@ -116,18 +120,14 @@ class WooCommercePluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('woocommerce_checkout_order_created', array($this, 'ceHandlerWooCommerceNewOrder'), 10, 1);
-        // hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('woocommerce_checkout_order_created', array($this, 'ceHandlerWooCommerceOrder'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -163,11 +163,10 @@ class WooCommercePluginHandler extends BaseContactFormPluginHandler
         }
 
         if (!empty($backfillArray)) {
-            $batches = array_chunk($backfillArray, CE4WP_BATCH_SIZE);
-            foreach ($batches as $batch) {
-                $this->batchUpsertContacts($batch);
-            }
+            return $backfillArray;
         }
+
+        return null;
     }
 
     function __construct()

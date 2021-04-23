@@ -1,6 +1,12 @@
 Changelog
 =========
 
+#### 1.3.5 - March 22 2021
+- Addresses two small issues where some relative URLs would not work for WP installs in subdirectories.
+
+#### 1.3.4 - March 16 2021
+- Improved initial contact sync: we can now import all your contacts without any limits!
+
 #### 1.3.3 - March 3 2021
 - UI Improvements on the settings screen.
 - Direct access to Creative Mail features from the left side nav in WP Admin.

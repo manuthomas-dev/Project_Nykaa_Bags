@@ -149,6 +149,12 @@ class AdminManager
 
         parse_str($_POST['data'], $post_data);
 
+        $survey_value = $post_data['ce4wp_deactivation_option'];
+        if (is_null($survey_value))
+        {
+            wp_send_json_success();
+        }
+
         $arguments = array(
             'method' => 'POST',
             'headers' => array(
@@ -160,7 +166,7 @@ class AdminManager
                 array(
                     'instance_id' => $instance_id,
                     'survey_id' => 1,
-                    'value' => $post_data['ce4wp_deactivation_option'],
+                    'value' => $survey_value,
                     'message' => $post_data['other']
                 )
             )
@@ -168,7 +174,7 @@ class AdminManager
 
         wp_remote_post(EnvironmentHelper::get_app_gateway_url() . 'wordpress/v1.0/survey', $arguments);
 
-        return true;
+        wp_send_json_success();
     }
 
     private function should_show_deactivation_modal() {

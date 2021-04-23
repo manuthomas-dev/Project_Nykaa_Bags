@@ -47,7 +47,7 @@ function hideAdminGetStartedBanner () {
             <strong><?= __( 'Grow your business with Creative Mail', 'ce4wp') ?></strong>
         </h1>
         <p><?= __( 'Our intelligent email editor makes it easy to create a professional email.', 'ce4wp') ?></p>
-        <a href="/wp-admin/admin.php?page=creativemail">
+        <a href="<?= esc_url( admin_url( 'admin.php?page=creativemail' ) ); ?>">
             <button class="button button-primary"><?= __( 'Start free', 'ce4wp') ?></button>
         </a>
     </section>

@@ -1,4 +1,12 @@
-/*! elementor - v3.1.4 - 10-03-2021 */
+/*! elementor - v3.2.1 - 21-04-2021 */
+/*! elementor - v3.2.0 - 19-04-2021 */
+/*! elementor - v3.1.4 - 18-04-2021 */
+/*! elementor - v3.1.4 - 18-04-2021 */
+/*! elementor - v3.1.4 - 14-04-2021 */
+/*! elementor - v3.1.4 - 14-04-2021 */
+/*! elementor - v3.1.4 - 07-04-2021 */
+/*! elementor - v3.1.4 - 07-04-2021 */
+/*! elementor - v3.1.4 - 21-03-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["preloaded-elements-handlers"],{
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":

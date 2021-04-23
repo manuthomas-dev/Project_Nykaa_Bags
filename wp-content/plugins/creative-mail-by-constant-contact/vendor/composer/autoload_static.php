@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b
+class ComposerStaticInitf4a1df0de7aa58f6561a7b6d4a6b9e9c
 {
     public static $prefixLengthsPsr4 = array (
         'F' => 
@@ -81,6 +81,7 @@ class ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b
         'CreativeMail\\Helpers\\GuidHelper' => __DIR__ . '/../..' . '/src/helpers/GuidHelper.php',
         'CreativeMail\\Helpers\\OptionsHelper' => __DIR__ . '/../..' . '/src/helpers/OptionsHelper.php',
         'CreativeMail\\Helpers\\SsoHelper' => __DIR__ . '/../..' . '/src/helpers/SsoHelper.php',
+        'CreativeMail\\Helpers\\ValidationHelper' => __DIR__ . '/../..' . '/src/helpers/ValidationHelper.php',
         'CreativeMail\\Integrations\\Integration' => __DIR__ . '/../..' . '/src/integrations/Integration.php',
         'CreativeMail\\Managers\\AdminManager' => __DIR__ . '/../..' . '/src/managers/AdminManager.php',
         'CreativeMail\\Managers\\ApiManager' => __DIR__ . '/../..' . '/src/managers/ApiManager.php',
@@ -96,6 +97,7 @@ class ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b
         'CreativeMail\\Modules\\Blog\\Models\\BlogInformation' => __DIR__ . '/../..' . '/src/modules/blog/models/BlogInformation.php',
         'CreativeMail\\Modules\\Blog\\Models\\BlogPost' => __DIR__ . '/../..' . '/src/modules/blog/models/BlogPost.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\BaseContactFormPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/BaseContactFormPluginHandler.php',
+        'CreativeMail\\Modules\\Contacts\\Handlers\\BlueHostBuilderPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/BlueHostBuilderPluginHandler.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\CalderaPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/CalderaPluginHandler.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\ContactFormSevenPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/ContactFormSevenPluginHandler.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\ElementorPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/ElementorPluginHandler.php',
@@ -105,16 +107,20 @@ class ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b
         'CreativeMail\\Modules\\Contacts\\Handlers\\NinjaFormsPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/NinjaFormsPluginHandler.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\WooCommercePluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/WooCommercePluginHandler.php',
         'CreativeMail\\Modules\\Contacts\\Handlers\\WpFormsPluginHandler' => __DIR__ . '/../..' . '/src/modules/contacts/Handlers/WpFormsPluginHandler.php',
+        'CreativeMail\\Modules\\Contacts\\Managers\\ContactsSyncManager' => __DIR__ . '/../..' . '/src/modules/contacts/Managers/ContactsSyncManager.php',
         'CreativeMail\\Modules\\Contacts\\Models\\ContactAddressModel' => __DIR__ . '/../..' . '/src/modules/contacts/models/ContactAddressModel.php',
         'CreativeMail\\Modules\\Contacts\\Models\\ContactFormSevenSubmission' => __DIR__ . '/../..' . '/src/modules/contacts/models/ContactFormSevenSubmission.php',
         'CreativeMail\\Modules\\Contacts\\Models\\ContactModel' => __DIR__ . '/../..' . '/src/modules/contacts/models/ContactModel.php',
         'CreativeMail\\Modules\\Contacts\\Models\\OptActionBy' => __DIR__ . '/../..' . '/src/modules/contacts/models/OptActionBy.php',
+        'CreativeMail\\Modules\\Contacts\\Processors\\ContactsSyncBackgroundProcessor' => __DIR__ . '/../..' . '/src/modules/contacts/Processes/ContactsSyncBackgroundProcessor.php',
         'CreativeMail\\Modules\\Contacts\\Services\\ContactsSyncService' => __DIR__ . '/../..' . '/src/modules/contacts/Services/ContactsSyncService.php',
         'CreativeMail\\Modules\\DashboardWidgetModule' => __DIR__ . '/../..' . '/src/modules/DashboardWidgetModule.php',
         'CreativeMail\\Modules\\FeedbackNoticeModule' => __DIR__ . '/../..' . '/src/modules/FeedbackNoticeModule.php',
         'CreativeMail\\Modules\\WooCommerce\\Models\\WCInformationModel' => __DIR__ . '/../..' . '/src/modules/woocommerce/models/WCInformationModel.php',
         'CreativeMail\\Modules\\WooCommerce\\Models\\WCProductModel' => __DIR__ . '/../..' . '/src/modules/woocommerce/models/WCProductModel.php',
         'CreativeMail\\Modules\\WooCommerce\\Models\\WCStoreInformation' => __DIR__ . '/../..' . '/src/modules/woocommerce/models/WCStoreInformation.php',
+        'CreativeMail\\Modules\\contacts\\Exceptions\\InvalidContactSyncBackgroundRequestException' => __DIR__ . '/../..' . '/src/modules/contacts/Exceptions/InvalidContactSyncBackgroundRequestException.php',
+        'CreativeMail\\Modules\\contacts\\Exceptions\\InvalidHandlerContactSyncRequestException' => __DIR__ . '/../..' . '/src/modules/contacts/Exceptions/InvalidHandlerContactSyncRequestException.php',
         'Defuse\\Crypto\\Core' => __DIR__ . '/..' . '/defuse/php-encryption/src/Core.php',
         'Defuse\\Crypto\\Crypto' => __DIR__ . '/..' . '/defuse/php-encryption/src/Crypto.php',
         'Defuse\\Crypto\\DerivedKeys' => __DIR__ . '/..' . '/defuse/php-encryption/src/DerivedKeys.php',
@@ -151,10 +157,10 @@ class ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInita94ac5d1b50913d18d3aa28a2e5a3c7b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf4a1df0de7aa58f6561a7b6d4a6b9e9c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf4a1df0de7aa58f6561a7b6d4a6b9e9c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf4a1df0de7aa58f6561a7b6d4a6b9e9c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf4a1df0de7aa58f6561a7b6d4a6b9e9c::$classMap;
 
         }, null, ClassLoader::class);
     }

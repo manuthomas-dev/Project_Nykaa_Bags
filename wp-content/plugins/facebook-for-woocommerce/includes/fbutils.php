@@ -418,10 +418,76 @@ if ( ! class_exists( 'WC_Facebookcommerce_Utils' ) ) :
 			return ( self::$store_name ) ? ( self::$store_name ) : 'A Store Has No Name';
 		}
 
+
+		/**
+		 * Get visible name for variant attribute rather than the slug
+		 *
+		 * @param int    $wp_id         Post ID.
+		 * @param string $label         Attribute label.
+		 * @param string $default_value Default value to use if the term has no name.
+		 * @return string Term name or the default value.
+		 */
+		public static function get_variant_option_name( $wp_id, $label, $default_value ) {
+			$meta           = get_post_meta( $wp_id, $label, true );
+			$attribute_name = str_replace( 'attribute_', '', $label );
+			$term           = get_term_by( 'slug', $meta, $attribute_name );
+			return $term && $term->name ? $term->name : $default_value;
+		}
+
+		/**
+		 * Get all products for synchronization tasks.
+		 *
+		 * Warning: While changing this code please make sure that it scales properly.
+		 * Sites with big product catalogs should not experience memory problems.
+		 *
+		 * @return array IDs of all product for synchronization.
+		 */
+		public static function get_all_product_ids_for_sync() {
+			// Get all published products ids. This includes parent products of variations.
+			$product_args = array(
+				'fields'         => 'ids',
+				'post_status'    => 'publish',
+				'post_type'      => 'product',
+				'posts_per_page' => -1,
+			);
+			$product_ids  = get_posts( $product_args );
+
+			// Get all variations ids with their parents ids.
+			$variation_args     = array(
+				'fields'         => 'id=>parent',
+				'post_status'    => 'publish',
+				'post_type'      => 'product_variation',
+				'posts_per_page' => -1,
+			);
+			$variation_products = get_posts( $variation_args );
+
+			/*
+			* Collect all parent products.
+			* Exclude variations which parents are not 'publish'.
+			*/
+			$parent_product_ids = array();
+			foreach ( $variation_products as $post_id => $parent_id ) {
+				/*
+				* Keep track of all parents to remove them from the list of products to sync.
+				* Use key to automatically remove duplicated items.
+				*/
+				$parent_product_ids[ $parent_id ] = true;
+
+				// Include variations with published parents only.
+				if ( in_array( $parent_id, $product_ids ) ) {
+					$product_ids[] = $post_id;
+				}
+			}
+
+			// Remove parent products because those can't be represented as Product Items.
+			return array_diff( $product_ids, array_keys( $parent_product_ids ) );
+		}
+
+
 		/*
 		* Change variant product field name from Woo taxonomy to FB name
 		*/
-		public static function sanitize_variant_name( $name ) {
+		public static function sanitize_variant_name( $name, $use_custom_data = true ) {
 			$name = str_replace( array( 'attribute_', 'pa_' ), '', strtolower( $name ) );
 
 			// British spelling
@@ -429,15 +495,17 @@ if ( ! class_exists( 'WC_Facebookcommerce_Utils' ) ) :
 				$name = self::FB_VARIANT_COLOR;
 			}
 
-			switch ( $name ) {
-				case self::FB_VARIANT_SIZE:
-				case self::FB_VARIANT_COLOR:
-				case self::FB_VARIANT_GENDER:
-				case self::FB_VARIANT_PATTERN:
-					break;
-				default:
-					$name = 'custom_data:' . strtolower( $name );
-					break;
+			if ( $use_custom_data ) {
+				switch ( $name ) {
+					case self::FB_VARIANT_SIZE:
+					case self::FB_VARIANT_COLOR:
+					case self::FB_VARIANT_GENDER:
+					case self::FB_VARIANT_PATTERN:
+						break;
+					default:
+						$name = 'custom_data:' . strtolower( $name );
+						break;
+				}
 			}
 
 			return $name;

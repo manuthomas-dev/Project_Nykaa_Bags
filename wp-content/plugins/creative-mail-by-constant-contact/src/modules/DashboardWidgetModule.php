@@ -6,6 +6,7 @@ use CreativeMail\Clients\CreativeMailClient;
 use CreativeMail\CreativeMail;
 use CreativeMail\Exceptions\CreativeMailException;
 use CreativeMail\Helpers\OptionsHelper;
+use CreativeMail\Helpers\ValidationHelper;
 use CreativeMail\Managers\RaygunManager;
 
 class DashboardWidgetModule
@@ -41,17 +42,20 @@ class DashboardWidgetModule
         try {
             $ce_account_status = $this->creative_mail_client->get_account_status();
 
-            $ce_has_finished_onboarding = $ce_account_status['has_finished_onboarding'];
-            if ( !$ce_has_finished_onboarding ) {
-                $this->show_no_account();
-                return;
-            }
-
-            $ce_has_campaign = $ce_account_status['has_campaigns'];
-            if ( !$ce_has_campaign ) {
-                $this->show_no_campaigns();
+            if (!ValidationHelper::is_null_or_empty($ce_account_status)) {
+                $ce_has_finished_onboarding = $ce_account_status['has_finished_onboarding'];
+                if (!$ce_has_finished_onboarding) {
+                    $this->show_no_account();
+                    return;
+                }
+                $ce_has_campaign = $ce_account_status['has_campaigns'];
+                if (!$ce_has_campaign) {
+                    $this->show_no_campaigns();
+                } else {
+                    $this->show_campaigns();
+                }
             } else {
-                $this->show_campaigns();
+                $this->show_no_campaigns();
             }
 
             if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {

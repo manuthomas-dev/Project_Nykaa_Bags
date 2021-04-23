@@ -174,7 +174,7 @@ class ApiManager
                 self::ROUTE_PATH              => '/synchronize',
                 self::ROUTE_METHODS           => 'POST',
                 self::ROUTE_CALLBACK          => function () {
-                    do_action(CE4WP_SYNCHRONIZE_ACTION, 250);
+                    do_action(CE4WP_SYNCHRONIZE_ACTION);
                     return $this->modify_response(new WP_REST_Response(null, 200));
                 }
             ),

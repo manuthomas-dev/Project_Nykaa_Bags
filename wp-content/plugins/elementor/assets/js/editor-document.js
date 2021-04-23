@@ -1,4 +1,4 @@
-/*! elementor - v3.1.4 - 10-03-2021 */
+/*! elementor - v3.2.1 - 21-04-2021 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -19327,7 +19327,7 @@ module.exports = elementorModules.Module.extend({
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 334:0-14 */
+/*! CommonJS bailout: module.exports is used directly at 346:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -19344,6 +19344,10 @@ __webpack_require__(/*! core-js/modules/es6.regexp.match */ "../node_modules/cor
 __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "../node_modules/core-js/modules/es6.regexp.replace.js");
 
 __webpack_require__(/*! core-js/modules/es6.function.name */ "../node_modules/core-js/modules/es6.function.name.js");
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _entries = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/entries */ "../node_modules/@babel/runtime-corejs2/core-js/object/entries.js"));
 
 __webpack_require__(/*! core-js/modules/es6.array.find */ "../node_modules/core-js/modules/es6.array.find.js");
 
@@ -19375,12 +19379,20 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
     };
   },
   initStylesheet: function initStylesheet() {
-    var breakpoints = elementorFrontend.config.breakpoints;
+    var _this = this;
+
+    var breakpoints = elementorFrontend.config.responsive.activeBreakpoints;
     this.stylesheet = new Stylesheet();
-    this.stylesheet.addDevice('mobile', 0).addDevice('tablet', breakpoints.md).addDevice('desktop', breakpoints.lg);
+    (0, _entries.default)(breakpoints).forEach(function (_ref) {
+      var _ref2 = (0, _slicedToArray2.default)(_ref, 2),
+          breakpointName = _ref2[0],
+          breakpointConfig = _ref2[1];
+
+      _this.stylesheet.addDevice(breakpointName, breakpointConfig.value);
+    });
   },
   addStyleRules: function addStyleRules(styleControls, values, controls, placeholders, replacements) {
-    var _this = this;
+    var _this2 = this;
 
     // If the current element contains dynamic values, parse these values
     var dynamicParsedValues = this.getSettings('settingsModel').parseDynamicSettings(values, this.getSettings('dynamicParsing'), styleControls);
@@ -19389,19 +19401,19 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
       var _control$dynamic, _values$__dynamic__;
 
       if (control.styleFields && control.styleFields.length) {
-        _this.addRepeaterControlsStyleRules(values[control.name], control.styleFields, control.fields, placeholders, replacements);
+        _this2.addRepeaterControlsStyleRules(values[control.name], control.styleFields, control.fields, placeholders, replacements);
       } // If a dynamic tag includes controls with CSS implementations, Take their CSS and apply it.
 
 
       if (((_control$dynamic = control.dynamic) === null || _control$dynamic === void 0 ? void 0 : _control$dynamic.active) && ((_values$__dynamic__ = values.__dynamic__) === null || _values$__dynamic__ === void 0 ? void 0 : _values$__dynamic__[control.name])) {
-        _this.addDynamicControlStyleRules(values.__dynamic__[control.name], control);
+        _this2.addDynamicControlStyleRules(values.__dynamic__[control.name], control);
       }
 
       if (!control.selectors) {
         return;
       }
 
-      var context = _this.getSettings('context');
+      var context = _this2.getSettings('context');
 
       var globalKeys;
 
@@ -19409,11 +19421,11 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
         globalKeys = context.model.get('settings').get('__globals__');
       }
 
-      _this.addControlStyleRules(control, dynamicParsedValues, controls, placeholders, replacements, globalKeys);
+      _this2.addControlStyleRules(control, dynamicParsedValues, controls, placeholders, replacements, globalKeys);
     });
   },
   addControlStyleRules: function addControlStyleRules(control, values, controls, placeholders, replacements, globalKeys) {
-    var _this2 = this;
+    var _this3 = this;
 
     var globalKey;
 
@@ -19441,7 +19453,7 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
       var outputCssProperty;
 
       if (globalKey) {
-        var selectorGlobalValue = _this2.getSelectorGlobalValue(control, globalKey);
+        var selectorGlobalValue = _this3.getSelectorGlobalValue(control, globalKey);
 
         if (selectorGlobalValue) {
           if ('font' === control.type) {
@@ -19461,7 +19473,7 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
             var parsedValue = '';
 
             if (!externalControlMissing) {
-              parsedValue = _this2.parsePropertyPlaceholder(control, value, controls, values, placeholder, controlName);
+              parsedValue = _this3.parsePropertyPlaceholder(control, value, controls, values, placeholder, controlName);
             }
 
             if (!parsedValue && 0 !== parsedValue) {
@@ -19476,7 +19488,7 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
                     return '';
                   }
 
-                  parsedValue = _this2.parsePropertyPlaceholder(control, value, controls, values, fallbackValue, fallbackControlName);
+                  parsedValue = _this3.parsePropertyPlaceholder(control, value, controls, values, fallbackValue, fallbackControlName);
                 }
               }
 
@@ -19547,7 +19559,7 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
         }
       }
 
-      _this2.stylesheet.addRules(selector, outputCssProperty, query);
+      _this3.stylesheet.addRules(selector, outputCssProperty, query);
     });
   },
   parsePropertyPlaceholder: function parsePropertyPlaceholder(control, value, controls, values, placeholder, parserControlName) {
@@ -19611,12 +19623,12 @@ ControlsCSSParser = elementorModules.ViewModule.extend({
     return value;
   },
   addRepeaterControlsStyleRules: function addRepeaterControlsStyleRules(repeaterValues, repeaterControlsItems, controls, placeholders, replacements) {
-    var _this3 = this;
+    var _this4 = this;
 
     repeaterControlsItems.forEach(function (item, index) {
       var itemModel = repeaterValues.models[index];
 
-      _this3.addStyleRules(item, itemModel.attributes, controls, placeholders.concat(['{{CURRENT_ITEM}}']), replacements.concat(['.elementor-repeater-item-' + itemModel.get('_id')]));
+      _this4.addStyleRules(item, itemModel.attributes, controls, placeholders.concat(['{{CURRENT_ITEM}}']), replacements.concat(['.elementor-repeater-item-' + itemModel.get('_id')]));
     });
   },
   addDynamicControlStyleRules: function addDynamicControlStyleRules(value, control) {
@@ -19674,7 +19686,7 @@ module.exports = ControlsCSSParser;
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 215:2-16 */
+/*! CommonJS bailout: module.exports is used directly at 252:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -19690,9 +19702,9 @@ __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "../node_modules/c
 
 __webpack_require__(/*! core-js/modules/es6.regexp.match */ "../node_modules/core-js/modules/es6.regexp.match.js");
 
-__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
-
 var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "../node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
+
+__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
 
 (function ($) {
   var Stylesheet = function Stylesheet() {
@@ -19700,18 +19712,6 @@ var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs
         rules = {},
         rawCSS = {},
         devices = {};
-
-    var getDeviceMaxValue = function getDeviceMaxValue(deviceName) {
-      var deviceNames = (0, _keys.default)(devices),
-          deviceNameIndex = deviceNames.indexOf(deviceName),
-          nextIndex = deviceNameIndex + 1;
-
-      if (nextIndex >= deviceNames.length) {
-        throw new RangeError('Max value for this device is out of range.');
-      }
-
-      return devices[deviceNames[nextIndex]] - 1;
-    };
 
     var queryToHash = function queryToHash(query) {
       var hash = [];
@@ -19728,7 +19728,7 @@ var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs
         var queryParts = singleQuery.split('_'),
             endPoint = queryParts[0],
             deviceName = queryParts[1];
-        query[endPoint] = 'max' === endPoint ? getDeviceMaxValue(deviceName) : devices[deviceName];
+        query[endPoint] = 'max' === endPoint ? devices[deviceName] : Stylesheet.getDeviceMinBreakpoint(deviceName);
       });
       return query;
     };
@@ -19890,6 +19890,55 @@ var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs
       }
     });
     return parsedProperties;
+  };
+
+  Stylesheet.getDesktopPreviousDeviceKey = function () {
+    var desktopPreviousDevice = '';
+    var activeBreakpoints = elementorFrontend.config.responsive.activeBreakpoints,
+        breakpointKeys = (0, _keys.default)(activeBreakpoints),
+        numOfDevices = breakpointKeys.length;
+
+    if ('min' === activeBreakpoints[breakpointKeys[numOfDevices - 1]].direction) {
+      // If the widescreen breakpoint is active, the device that's previous to desktop is the last one before
+      // widescreen.
+      desktopPreviousDevice = breakpointKeys[numOfDevices - 2];
+    } else {
+      // If the widescreen breakpoint isn't active, we just take the last device returned by the config.
+      desktopPreviousDevice = breakpointKeys[numOfDevices - 1];
+    }
+
+    return desktopPreviousDevice;
+  };
+
+  Stylesheet.getDesktopMinPoint = function () {
+    var activeBreakpoints = elementorFrontend.config.responsive.activeBreakpoints,
+        desktopPreviousDevice = Stylesheet.getDesktopPreviousDeviceKey();
+    return activeBreakpoints[desktopPreviousDevice].value + 1;
+  };
+
+  Stylesheet.getDeviceMinBreakpoint = function (deviceName) {
+    if ('desktop' === deviceName) {
+      return Stylesheet.getDesktopMinPoint();
+    }
+
+    var activeBreakpoints = elementorFrontend.config.responsive.activeBreakpoints,
+        breakpointNames = (0, _keys.default)(activeBreakpoints);
+    var minBreakpoint;
+
+    if (breakpointNames[0] === deviceName) {
+      // For the lowest breakpoint, the min point is always 320.
+      minBreakpoint = 320;
+    } else if ('min' === activeBreakpoints[deviceName].direction) {
+      // Widescreen only has a minimum point. In this case, the breakpoint
+      // value in the Breakpoints config is itself the device min point.
+      minBreakpoint = activeBreakpoints[deviceName].value;
+    } else {
+      var deviceNameIndex = breakpointNames.indexOf(deviceName),
+          previousIndex = deviceNameIndex - 1;
+      minBreakpoint = activeBreakpoints[breakpointNames[previousIndex]].value + 1;
+    }
+
+    return minBreakpoint;
   };
 
   module.exports = Stylesheet;
@@ -20727,6 +20776,19 @@ var CommandBase = /*#__PURE__*/function (_ArgsObject) {
     key: "getInstanceType",
     value: function getInstanceType() {
       return 'CommandBase';
+    }
+    /**
+     * Get info of command.
+     *
+     * Use to provide 'extra' information about the command.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: "getInfo",
+    value: function getInfo() {
+      return {};
     }
     /**
      * Current component.

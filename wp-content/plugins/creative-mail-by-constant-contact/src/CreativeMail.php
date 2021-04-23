@@ -10,6 +10,7 @@ use CreativeMail\Managers\DatabaseManager;
 use CreativeMail\Managers\EmailManager;
 use CreativeMail\Managers\InstanceManager;
 use CreativeMail\Managers\IntegrationManager;
+use CreativeMail\Modules\Contacts\Managers\ContactsSyncManager;
 
 class CreativeMail
 {
@@ -22,6 +23,7 @@ class CreativeMail
     private $email_manager;
     private $database_manager;
     private $checkout_manager;
+    private $contacts_sync_manager;
 
     public function __construct()
     {
@@ -35,6 +37,7 @@ class CreativeMail
         $this->integration_manager = new IntegrationManager();
         $this->email_manager = new EmailManager();
         $this->checkout_manager = new CheckoutManager();
+        $this->contacts_sync_manager = new ContactsSyncManager();
     }
 
     public function add_hooks()
@@ -91,6 +94,11 @@ class CreativeMail
     public function get_admin_manager()
     {
         return $this->admin_manager;
+    }
+
+    public function get_contacts_sync_manager()
+    {
+        return $this->contacts_sync_manager;
     }
 
     public function is_active()

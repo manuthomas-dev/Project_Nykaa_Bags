@@ -149,7 +149,7 @@ class EmailManager
         ?><tr valign="top">
             <th scope="row" class="titledesc"><?php _e('Customize Emails', 'ce4wp'); ?></th>
             <td class="forminp forminp-<?php echo sanitize_title($options['type']); ?>">
-                <a href="admin.php?page=creativemail">
+                <a href="<?= esc_url( admin_url( 'admin.php?page=creativemail' ) ); ?>">
                     <button type="button" class="button button-secondary" value="<?php _e('Manage', 'ce4wp'); ?>"><?php _e('Manage', 'ce4wp'); ?></button>
                 </a>
                 <p class="description"><?php _e('Manage all your email settings and templates with Creative Mail', 'ce4wp'); ?></p>

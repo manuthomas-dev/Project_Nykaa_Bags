@@ -10,7 +10,7 @@
         </p>
         <p><?= __( 'Grow your business or blog with the power of email marketing.', 'ce4wp' ); ?></p>
     </section>
-    <a href="/wp-admin/admin.php?page=creativemail_settings">
+    <a href="<?= esc_url( admin_url( 'admin.php?page=creativemail_settings' ) ); ?>">
         <button class="button button-primary"><?= __( 'Sync my contacts', 'ce4wp' ); ?></button>
     </a>
     <span id="close" onclick="hideAdminFeedbackNotice('feedback_notice_sync_disabled')"></span>

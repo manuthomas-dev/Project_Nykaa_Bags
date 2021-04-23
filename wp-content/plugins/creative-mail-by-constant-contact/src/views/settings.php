@@ -65,26 +65,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ?>
             </div>
           </div>
-
-          <div class="ce4wp-card">
-            <div class="ce4wp-px-4 ce4wp-py-4">
-              <h2 class="ce4wp-typography-root ce4wp-typography-h2 ce4wp-mb-2"><?= __( 'Contact Sync', 'ce4wp' ); ?></h2>
-
-              <?php
-                if ($contact_sync_available) {
-                    include 'activated-integrations.php';
+            <?php
+                if (OptionsHelper::get_instance_id()) {
+                    include 'contact-sync.php';
                 }
-                if($supported_plugin_available){
-                    include 'available-integrations.php';
+                if (EnvironmentHelper::is_test_environment()) {
+                    include 'settings-internal.php';
                 }
-                ?>
-            </div>
-          </div>
-
-          <?php
-            if (EnvironmentHelper::is_test_environment()) {
-                include 'settings-internal.php';
-            }
             ?>
 
           <div class="ce4wp-card">

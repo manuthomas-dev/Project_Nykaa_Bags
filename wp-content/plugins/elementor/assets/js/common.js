@@ -1,4 +1,4 @@
-/*! elementor - v3.1.4 - 10-03-2021 */
+/*! elementor - v3.2.1 - 21-04-2021 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -9662,6 +9662,164 @@ exports.default = Shortcuts;
 
 /***/ }),
 
+/***/ "../core/common/assets/js/api/extras/hash-commands.js":
+/*!************************************************************!*\
+  !*** ../core/common/assets/js/api/extras/hash-commands.js ***!
+  \************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = void 0;
+
+__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "../node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "../node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "../node_modules/@babel/runtime-corejs2/helpers/defineProperty.js"));
+
+/**
+ * @typedef HashCommand
+ * @property {string} method,
+ * @property {string} command
+ */
+var HashCommands = /*#__PURE__*/function () {
+  /**
+   * Cannot be static since it uses callback(s) that are available only after '$e' is initialized.
+   */
+
+  /**
+   * List of current loaded hash commands.
+   *
+   * @type {Array.<HashCommand>}
+   */
+  function HashCommands() {
+    (0, _classCallCheck2.default)(this, HashCommands);
+    (0, _defineProperty2.default)(this, "dispatchersList", {
+      'e:run': {
+        runner: $e.run,
+        isSafe: function isSafe(command) {
+          var _$e$commands$getComma;
+
+          return (_$e$commands$getComma = $e.commands.getCommandClass(command)) === null || _$e$commands$getComma === void 0 ? void 0 : _$e$commands$getComma.getInfo().isSafe;
+        }
+      },
+      'e:route': {
+        runner: $e.route,
+        isSafe: function isSafe() {
+          return true;
+        }
+      }
+    });
+    (0, _defineProperty2.default)(this, "commands", []);
+    this.commands = this.get();
+  }
+  /**
+   * Function get().
+   *
+   * Get API requests that comes from hash ( eg #e:run ).
+   *
+   * @param {string} hash
+   *
+   * @returns {Array.<HashCommand>}
+   */
+
+
+  (0, _createClass2.default)(HashCommands, [{
+    key: "get",
+    value: function get() {
+      var _this = this;
+
+      var hash = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : location.hash;
+      var result = [];
+
+      if (hash) {
+        // Remove first '#' and split each '&'.
+        var hashList = hash.substr(1).split('&');
+        hashList.forEach(function (hashItem) {
+          var hashParts = hashItem.split(':');
+
+          if (3 !== hashParts.length) {
+            return;
+          }
+
+          var method = hashParts[0] + ':' + hashParts[1],
+              dispatcher = _this.dispatchersList[method];
+
+          if (dispatcher) {
+            var command = hashParts[2];
+            result.push({
+              method: method,
+              command: command
+            });
+          }
+        });
+      }
+
+      return result;
+    }
+    /**
+     * Function run().
+     *
+     * Run API requests that comes from hash ( eg #e:run ).
+     *
+     * @param {Array.<HashCommand>} [commands=this.commands]
+     */
+
+  }, {
+    key: "run",
+    value: function run() {
+      var _this2 = this;
+
+      var commands = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.commands;
+      commands.forEach(function (hashCommand) {
+        var dispatcher = _this2.dispatchersList[hashCommand.method];
+
+        if (!dispatcher) {
+          throw Error("No dispatcher found for the command: `".concat(hashCommand.command, "`."));
+        }
+
+        if (!dispatcher.isSafe(hashCommand.command)) {
+          throw Error("Attempting to run unsafe or non exist command: `".concat(hashCommand.command, "`."));
+        }
+
+        dispatcher.runner(hashCommand.command);
+      });
+    }
+    /**
+     * Function runOnce().
+     *
+     * Do same as `run` but clear `this.commands` before leaving.
+     */
+
+  }, {
+    key: "runOnce",
+    value: function runOnce() {
+      this.run(this.commands);
+      this.commands = [];
+    }
+  }]);
+  return HashCommands;
+}();
+
+exports.default = HashCommands;
+
+/***/ }),
+
 /***/ "../core/common/assets/js/api/index.js":
 /*!*********************************************!*\
   !*** ../core/common/assets/js/api/index.js ***!
@@ -9710,6 +9868,8 @@ var _components = _interopRequireDefault(__webpack_require__(/*! ./core/componen
 
 var _data = _interopRequireDefault(__webpack_require__(/*! ./core/data.js */ "../core/common/assets/js/api/core/data.js"));
 
+var _hashCommands = _interopRequireDefault(__webpack_require__(/*! ./extras/hash-commands */ "../core/common/assets/js/api/extras/hash-commands.js"));
+
 var _hookBreak = _interopRequireDefault(__webpack_require__(/*! ./modules/hook-break */ "../core/common/assets/js/api/modules/hook-break.js"));
 
 var _hooks = _interopRequireDefault(__webpack_require__(/*! ./core/hooks */ "../core/common/assets/js/api/core/hooks.js"));
@@ -9748,6 +9908,9 @@ var API = /*#__PURE__*/function () {
       HookBreak: _hookBreak.default,
       hookData: hookData,
       hookUI: hookUI
+    };
+    this.extras = {
+      hashCommands: new _hashCommands.default()
     }; // Backwards compatibility should be last, in order to handle others.
 
     this.bc = new _backwardsCompatibility.default();
@@ -9876,6 +10039,19 @@ var CommandBase = /*#__PURE__*/function (_ArgsObject) {
     key: "getInstanceType",
     value: function getInstanceType() {
       return 'CommandBase';
+    }
+    /**
+     * Get info of command.
+     *
+     * Use to provide 'extra' information about the command.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: "getInfo",
+    value: function getInfo() {
+      return {};
     }
     /**
      * Current component.
@@ -13343,6 +13519,8 @@ _Object$defineProperty(exports, "__esModule", {
 
 exports.default = void 0;
 
+__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
+
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "../node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "../node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
@@ -13385,10 +13563,14 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
         this.each(function () {
           counter++;
           var $this = jQuery(this),
-              callbackId = 'cb' + counter;
+              callbackId = 'cb' + counter,
+              prevLibraryRoute = $e.routes.getHistory('library').reverse()[0].route,
+              tabName = prevLibraryRoute.split('/')[2],
+              UTMSource = "utm_source=editor-panel&utm_medium=wp-dash&utm_campaign=insert_".concat(tabName);
           $this.attr({
             target: '_blank',
-            href: $this.attr('href') + '&mode=popup&callback_id=' + callbackId
+            rel: 'opener',
+            href: $this.attr('href') + '&mode=popup&callback_id=' + callbackId + '&' + UTMSource
           });
           elementorCommon.elements.$window.on('elementor/connect/success/' + callbackId, settings.success).on('elementor/connect/error/' + callbackId, settings.error);
         });

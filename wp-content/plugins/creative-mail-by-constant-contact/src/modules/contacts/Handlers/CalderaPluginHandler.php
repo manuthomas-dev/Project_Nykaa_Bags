@@ -10,6 +10,10 @@ use CreativeMail\Modules\Contacts\Models\OptActionBy;
 
 class CalderaPluginHandler extends BaseContactFormPluginHandler
 {
+    private function GetCalderaPhoneFields()
+    {
+        return array_merge($this->phoneFields, ['phone_better']);
+    }
 
     private function GetNameFromForm($entry)
     {
@@ -31,17 +35,24 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
         return $name;
     }
 
-    private function GetEmailFromForm($entry)
+    private function FindFormValues($entry, $calderaContact)
     {
         if ($this->isNullOrEmpty($entry)) {
             return null;
         }
+        $calderaPhoneFields = $this->GetCalderaPhoneFields();
         foreach ($entry as $field) {
-            if ($field->slug === "email_address") {
-                return $field->value;
+            $slug = strtolower($field->slug);
+            if (in_array($slug, $calderaPhoneFields)) {
+                $calderaContact->phone = $field->value;
+            } elseif (in_array($slug, $this->birthdayFields)) {
+                $calderaContact->birthday = $field->value;
+            } elseif ($slug == "email_address") {
+                $calderaContact->email = $field->value;
+            } elseif ($slug == "consent") {
+                $calderaContact->consent = $field->value;
             }
         }
-        return null;
     }
 
     public function convertToContactModel($contact)
@@ -54,10 +65,16 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
         $contactModel = new ContactModel();
 
         $contactModel->setEventType(CE4WP_CAL_EVENTTYPE);
-        //optin true on sync, false on form submission
-        $contactModel->setOptIn($contact->opt_in);
         $contactModel->setOptOut(false);
-        $contactModel->setOptActionBy(OptActionBy::Owner);
+
+        //if its a form submission we take the opt_in value and set action to visitor
+        if ($contact->isFormSubmission) {
+            $contactModel->setOptIn(boolval($contact->consent));
+            $contactModel->setOptActionBy(OptActionBy::Visitor);
+        } else {
+            $contactModel->setOptIn(true);
+            $contactModel->setOptActionBy(OptActionBy::Owner);
+        }
 
         $contactModel->setEmail($email);
 
@@ -66,6 +83,12 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
         }
         if (!empty($contact->lastname)) {
             $contactModel->setLastName($contact->lastname);
+        }
+        if (!empty($contact->phone)) {
+            $contactModel->setPhone($contact->phone);
+        }
+        if (!empty($contact->birthday)) {
+            $contactModel->set_birthday($contact->birthday);
         }
 
         return $contactModel;
@@ -76,13 +99,16 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
         try {
             global $wpdb;
             $calderaContact = new \stdClass();
+            $calderaContact->isFormSubmission = true;
+
             $entryData = $wpdb->get_results($wpdb->prepare("SELECT slug, `value` FROM wp_cf_form_entry_values WHERE entry_id = {$entryid}"));
             $nameValues = $this->GetNameFromForm($entryData);
             $calderaContact->firstname = array_key_exists("firstname", $nameValues) ? $nameValues["firstname"] : null;
             $calderaContact->lastname = array_key_exists("lastname", $nameValues) ? $nameValues["lastname"] : null;
-            $calderaContact->email = $this->GetEmailFromForm($entryData);
-            //set opt in to false for form submissions
-            $calderaContact->opt_in = false;
+
+            //get additional form values and add to the contact
+            $this->FindFormValues($entryData, $calderaContact);
+
             if (empty($calderaContact->email)) {
                 return;
             }
@@ -95,18 +121,14 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('caldera_forms_submit_complete', array($this, 'ceHandleCalderaFormSubmission'), 60, 4); //make sure the prio is set as to run after caldera itself otherwise data is not present in db
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('caldera_forms_submit_complete', array($this, 'ceHandleCalderaFormSubmission'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -122,8 +144,12 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
             //loop through the entries and extract necessary data
             foreach ($entryIds as $entry) {
                 $contact = new \stdClass();
+                $contact->isFormSubmission = false;
                 $entryData = $wpdb->get_results($wpdb->prepare("SELECT slug, `value` FROM wp_cf_form_entry_values WHERE entry_id = {$entry->id}"));
-                $contact->email = $this->GetEmailFromForm($entryData);
+
+                //get form values
+                $this->FindFormValues($entryData, $contact);
+
                 if (empty($contact->email)) {
                     continue;
                 }
@@ -133,7 +159,7 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
                 $contact->lastname = array_key_exists("lastname", $nameValues) ? $nameValues["lastname"] : null;
 
                 //contact opt in is true on sync
-                $contact->opt_in = true;
+                $contact->consent = true;
 
                 //Convert to contactModel
                 $contactModel = null;
@@ -154,15 +180,11 @@ class CalderaPluginHandler extends BaseContactFormPluginHandler
             }
 
             if (!empty($contactsArray)) {
-                $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-                foreach ($batches as $batch) {
-                    try {
-                        $this->batchUpsertContacts($batch);
-                    } catch (\Exception $exception) {
-                        RaygunManager::get_instance()->exception_handler($exception);
-                    }
-                }
+                return $contactsArray;
             }
+
         }
+
+        return null;
     }
 }

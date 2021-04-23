@@ -1,4 +1,4 @@
-/*! elementor - v3.1.4 - 10-03-2021 */
+/*! elementor - v3.2.1 - 21-04-2021 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,6 +6,78 @@
 /*!**************************************!*\
   !*** ../core/app/assets/js/app.scss ***!
   \**************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/molecules/upload-file.scss":
+/*!********************************************************!*\
+  !*** ../core/app/assets/js/molecules/upload-file.scss ***!
+  \********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/organisms/drop-zone.scss":
+/*!******************************************************!*\
+  !*** ../core/app/assets/js/organisms/drop-zone.scss ***!
+  \******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/organisms/wizard-footer.scss":
+/*!**********************************************************!*\
+  !*** ../core/app/assets/js/organisms/wizard-footer.scss ***!
+  \**********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/atoms/box.scss":
+/*!***********************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/box.scss ***!
+  \***********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/atoms/checkbox.scss":
+/*!****************************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/checkbox.scss ***!
+  \****************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/atoms/drag-drop.scss":
+/*!*****************************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/drag-drop.scss ***!
+  \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
 /***/ (() => {
@@ -38,10 +110,130 @@
 
 /***/ }),
 
-/***/ "../core/app/assets/js/ui/molecules/buttons.scss":
-/*!*******************************************************!*\
-  !*** ../core/app/assets/js/ui/molecules/buttons.scss ***!
-  \*******************************************************/
+/***/ "../core/app/assets/js/ui/molecules/inline-link.scss":
+/*!***********************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/inline-link.scss ***!
+  \***********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/molecules/list.scss":
+/*!****************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/list.scss ***!
+  \****************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/molecules/notice.scss":
+/*!******************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/notice.scss ***!
+  \******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.scss":
+/*!********************************************************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.scss ***!
+  \********************************************************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.scss ***!
+  \*******************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.scss":
+/*!*******************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.scss ***!
+  \*******************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/import/import-process/import-process-style.scss":
+/*!*********************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/import/import-process/import-process-style.scss ***!
+  \*********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.scss":
+/*!*********************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.scss ***!
+  \*********************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/message/message.scss":
+/*!***************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/message/message.scss ***!
+  \***************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/page-header/page-header.scss":
+/*!***********************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/page-header/page-header.scss ***!
+  \***********************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.scss":
+/*!***********************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.scss ***!
+  \***********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
 /***/ (() => {
@@ -76,6 +268,19 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ ".
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/get-iterator.js":
+/*!**********************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/get-iterator.js ***!
+  \**********************************************************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] -> ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/get-iterator.js */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/get-iterator.js");
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/is-iterable.js":
 /*!*********************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/core-js/is-iterable.js ***!
@@ -86,6 +291,19 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ ".
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/is-iterable.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \************************************************************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] -> ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/json/stringify.js */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/json/stringify.js");
 
 /***/ }),
 
@@ -271,6 +489,19 @@ module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/weak-map.js":
+/*!******************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/weak-map.js ***!
+  \******************************************************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] -> ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/weak-map.js */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/weak-map.js");
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/helpers/arrayLikeToArray.js":
 /*!**************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/helpers/arrayLikeToArray.js ***!
@@ -291,6 +522,25 @@ function _arrayLikeToArray(arr, len) {
 }
 
 module.exports = _arrayLikeToArray;
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/arrayWithHoles.js":
+/*!************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/arrayWithHoles.js ***!
+  \************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _Array$isArray = __webpack_require__(/*! ../core-js/array/is-array */ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+
+function _arrayWithHoles(arr) {
+  if (_Array$isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
 
 /***/ }),
 
@@ -384,6 +634,86 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/createForOfIteratorHelper.js":
+/*!***********************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/createForOfIteratorHelper.js ***!
+  \***********************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 68:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _getIterator = __webpack_require__(/*! ../core-js/get-iterator */ "../node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+
+var _Array$isArray = __webpack_require__(/*! ../core-js/array/is-array */ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+
+var _Symbol$iterator = __webpack_require__(/*! ../core-js/symbol/iterator */ "../node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+
+var _Symbol = __webpack_require__(/*! ../core-js/symbol */ "../node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ "../node_modules/@babel/runtime-corejs2/helpers/unsupportedIterableToArray.js");
+
+function _createForOfIteratorHelper(o, allowArrayLike) {
+  var it;
+
+  if (typeof _Symbol === "undefined" || o[_Symbol$iterator] == null) {
+    if (_Array$isArray(o) || (it = unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+      if (it) o = it;
+      var i = 0;
+
+      var F = function F() {};
+
+      return {
+        s: F,
+        n: function n() {
+          if (i >= o.length) return {
+            done: true
+          };
+          return {
+            done: false,
+            value: o[i++]
+          };
+        },
+        e: function e(_e) {
+          throw _e;
+        },
+        f: F
+      };
+    }
+
+    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  }
+
+  var normalCompletion = true,
+      didErr = false,
+      err;
+  return {
+    s: function s() {
+      it = _getIterator(o);
+    },
+    n: function n() {
+      var step = it.next();
+      normalCompletion = step.done;
+      return step;
+    },
+    e: function e(_e2) {
+      didErr = true;
+      err = _e2;
+    },
+    f: function f() {
+      try {
+        if (!normalCompletion && it["return"] != null) it["return"]();
+      } finally {
+        if (didErr) throw err;
+      }
+    }
+  };
+}
+
+module.exports = _createForOfIteratorHelper;
 
 /***/ }),
 
@@ -607,6 +937,79 @@ module.exports = _interopRequireDefault;
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js":
+/*!********************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
+  \********************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 61:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "../node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+
+var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "../node_modules/@babel/runtime-corejs2/helpers/typeof.js");
+
+var _WeakMap = __webpack_require__(/*! ../core-js/weak-map */ "../node_modules/@babel/runtime-corejs2/core-js/weak-map.js");
+
+function _getRequireWildcardCache() {
+  if (typeof _WeakMap !== "function") return null;
+  var cache = new _WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = _Object$defineProperty && _Object$getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? _Object$getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        _Object$defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/helpers/isNativeReflectConstruct.js":
 /*!**********************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/helpers/isNativeReflectConstruct.js ***!
@@ -655,6 +1058,69 @@ function _iterableToArray(iter) {
 }
 
 module.exports = _iterableToArray;
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js":
+/*!******************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js ***!
+  \******************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 34:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _getIterator = __webpack_require__(/*! ../core-js/get-iterator */ "../node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+
+var _isIterable = __webpack_require__(/*! ../core-js/is-iterable */ "../node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+
+var _Symbol = __webpack_require__(/*! ../core-js/symbol */ "../node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof _Symbol === "undefined" || !_isIterable(Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = _getIterator(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/nonIterableRest.js":
+/*!*************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/nonIterableRest.js ***!
+  \*************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
+/***/ ((module) => {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableRest;
 
 /***/ }),
 
@@ -784,6 +1250,31 @@ function _setPrototypeOf(o, p) {
 }
 
 module.exports = _setPrototypeOf;
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js":
+/*!***********************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js ***!
+  \***********************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ "../node_modules/@babel/runtime-corejs2/helpers/arrayWithHoles.js");
+
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ "../node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ "../node_modules/@babel/runtime-corejs2/helpers/unsupportedIterableToArray.js");
+
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ "../node_modules/@babel/runtime-corejs2/helpers/nonIterableRest.js");
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
 
 /***/ }),
 
@@ -930,6 +1421,23 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "../node_modules
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/get-iterator.js":
+/*!**********************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/get-iterator.js ***!
+  \**********************************************************************************************/
+/*! dynamic exports */
+/*! export __esModule [maybe provided (runtime-defined)] [no usage info] [provision prevents renaming (no use info)] -> ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator.js .__esModule */
+/*! other exports [maybe provided (runtime-defined)] [no usage info] -> ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator.js */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ../modules/web.dom.iterable */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.string.iterator.js");
+module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator.js");
+
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/is-iterable.js":
 /*!*********************************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/is-iterable.js ***!
@@ -943,6 +1451,24 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "../node_modules
 __webpack_require__(/*! ../modules/web.dom.iterable */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.is-iterable.js");
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/json/stringify.js":
+/*!************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/json/stringify.js ***!
+  \************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var core = __webpack_require__(/*! ../../modules/_core */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js");
+var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
+module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
+  return $JSON.stringify.apply($JSON, arguments);
+};
 
 
 /***/ }),
@@ -1182,6 +1708,26 @@ module.exports = __webpack_require__(/*! ../../modules/_wks-ext */ "../node_modu
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/weak-map.js":
+/*!******************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/weak-map.js ***!
+  \******************************************************************************************/
+/*! dynamic exports */
+/*! export __esModule [maybe provided (runtime-defined)] [no usage info] [provision prevents renaming (no use info)] */
+/*! other exports [maybe provided (runtime-defined)] [no usage info] */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.weak-map */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.weak-map.js");
+__webpack_require__(/*! ../modules/es7.weak-map.of */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.of.js");
+__webpack_require__(/*! ../modules/es7.weak-map.from */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").WeakMap;
+
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_a-function.js":
 /*!**************************************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_a-function.js ***!
@@ -1209,6 +1755,24 @@ module.exports = function (it) {
 /***/ ((module) => {
 
 module.exports = function () { /* empty */ };
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-instance.js":
+/*!***************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-instance.js ***!
+  \***************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
+/***/ ((module) => {
+
+module.exports = function (it, Constructor, name, forbiddenField) {
+  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {
+    throw TypeError(name + ': incorrect invocation!');
+  } return it;
+};
 
 
 /***/ }),
@@ -1262,6 +1826,111 @@ module.exports = function (IS_INCLUDES) {
       if (O[index] === el) return IS_INCLUDES || index || 0;
     } return !IS_INCLUDES && -1;
   };
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-methods.js":
+/*!*****************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-methods.js ***!
+  \*****************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// 0 -> Array#forEach
+// 1 -> Array#map
+// 2 -> Array#filter
+// 3 -> Array#some
+// 4 -> Array#every
+// 5 -> Array#find
+// 6 -> Array#findIndex
+var ctx = __webpack_require__(/*! ./_ctx */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_ctx.js");
+var IObject = __webpack_require__(/*! ./_iobject */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_iobject.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-object.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-length.js");
+var asc = __webpack_require__(/*! ./_array-species-create */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-create.js");
+module.exports = function (TYPE, $create) {
+  var IS_MAP = TYPE == 1;
+  var IS_FILTER = TYPE == 2;
+  var IS_SOME = TYPE == 3;
+  var IS_EVERY = TYPE == 4;
+  var IS_FIND_INDEX = TYPE == 6;
+  var NO_HOLES = TYPE == 5 || IS_FIND_INDEX;
+  var create = $create || asc;
+  return function ($this, callbackfn, that) {
+    var O = toObject($this);
+    var self = IObject(O);
+    var f = ctx(callbackfn, that, 3);
+    var length = toLength(self.length);
+    var index = 0;
+    var result = IS_MAP ? create($this, length) : IS_FILTER ? create($this, 0) : undefined;
+    var val, res;
+    for (;length > index; index++) if (NO_HOLES || index in self) {
+      val = self[index];
+      res = f(val, index, O);
+      if (TYPE) {
+        if (IS_MAP) result[index] = res;   // map
+        else if (res) switch (TYPE) {
+          case 3: return true;             // some
+          case 5: return val;              // find
+          case 6: return index;            // findIndex
+          case 2: result.push(val);        // filter
+        } else if (IS_EVERY) return false; // every
+      }
+    }
+    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : result;
+  };
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-constructor.js":
+/*!*****************************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-constructor.js ***!
+  \*****************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-object.js");
+var isArray = __webpack_require__(/*! ./_is-array */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-array.js");
+var SPECIES = __webpack_require__(/*! ./_wks */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_wks.js")('species');
+
+module.exports = function (original) {
+  var C;
+  if (isArray(original)) {
+    C = original.constructor;
+    // cross-realm fallback
+    if (typeof C == 'function' && (C === Array || isArray(C.prototype))) C = undefined;
+    if (isObject(C)) {
+      C = C[SPECIES];
+      if (C === null) C = undefined;
+    }
+  } return C === undefined ? Array : C;
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-create.js":
+/*!************************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-create.js ***!
+  \************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+var speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-species-constructor.js");
+
+module.exports = function (original, length) {
+  return new (speciesConstructor(original))(length);
 };
 
 
@@ -1355,6 +2024,178 @@ var toString = {}.toString;
 
 module.exports = function (it) {
   return toString.call(it).slice(8, -1);
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection-weak.js":
+/*!*******************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection-weak.js ***!
+  \*******************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 49:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var redefineAll = __webpack_require__(/*! ./_redefine-all */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine-all.js");
+var getWeak = __webpack_require__(/*! ./_meta */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_meta.js").getWeak;
+var anObject = __webpack_require__(/*! ./_an-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-object.js");
+var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-object.js");
+var anInstance = __webpack_require__(/*! ./_an-instance */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-instance.js");
+var forOf = __webpack_require__(/*! ./_for-of */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_for-of.js");
+var createArrayMethod = __webpack_require__(/*! ./_array-methods */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-methods.js");
+var $has = __webpack_require__(/*! ./_has */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_has.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_validate-collection.js");
+var arrayFind = createArrayMethod(5);
+var arrayFindIndex = createArrayMethod(6);
+var id = 0;
+
+// fallback for uncaught frozen keys
+var uncaughtFrozenStore = function (that) {
+  return that._l || (that._l = new UncaughtFrozenStore());
+};
+var UncaughtFrozenStore = function () {
+  this.a = [];
+};
+var findUncaughtFrozen = function (store, key) {
+  return arrayFind(store.a, function (it) {
+    return it[0] === key;
+  });
+};
+UncaughtFrozenStore.prototype = {
+  get: function (key) {
+    var entry = findUncaughtFrozen(this, key);
+    if (entry) return entry[1];
+  },
+  has: function (key) {
+    return !!findUncaughtFrozen(this, key);
+  },
+  set: function (key, value) {
+    var entry = findUncaughtFrozen(this, key);
+    if (entry) entry[1] = value;
+    else this.a.push([key, value]);
+  },
+  'delete': function (key) {
+    var index = arrayFindIndex(this.a, function (it) {
+      return it[0] === key;
+    });
+    if (~index) this.a.splice(index, 1);
+    return !!~index;
+  }
+};
+
+module.exports = {
+  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
+    var C = wrapper(function (that, iterable) {
+      anInstance(that, C, NAME, '_i');
+      that._t = NAME;      // collection type
+      that._i = id++;      // collection id
+      that._l = undefined; // leak store for uncaught frozen objects
+      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
+    });
+    redefineAll(C.prototype, {
+      // 23.3.3.2 WeakMap.prototype.delete(key)
+      // 23.4.3.3 WeakSet.prototype.delete(value)
+      'delete': function (key) {
+        if (!isObject(key)) return false;
+        var data = getWeak(key);
+        if (data === true) return uncaughtFrozenStore(validate(this, NAME))['delete'](key);
+        return data && $has(data, this._i) && delete data[this._i];
+      },
+      // 23.3.3.4 WeakMap.prototype.has(key)
+      // 23.4.3.4 WeakSet.prototype.has(value)
+      has: function has(key) {
+        if (!isObject(key)) return false;
+        var data = getWeak(key);
+        if (data === true) return uncaughtFrozenStore(validate(this, NAME)).has(key);
+        return data && $has(data, this._i);
+      }
+    });
+    return C;
+  },
+  def: function (that, key, value) {
+    var data = getWeak(anObject(key), true);
+    if (data === true) uncaughtFrozenStore(that).set(key, value);
+    else data[that._i] = value;
+    return that;
+  },
+  ufstore: uncaughtFrozenStore
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection.js":
+/*!**************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection.js ***!
+  \**************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var global = __webpack_require__(/*! ./_global */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_global.js");
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+var meta = __webpack_require__(/*! ./_meta */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_meta.js");
+var fails = __webpack_require__(/*! ./_fails */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_fails.js");
+var hide = __webpack_require__(/*! ./_hide */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_hide.js");
+var redefineAll = __webpack_require__(/*! ./_redefine-all */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine-all.js");
+var forOf = __webpack_require__(/*! ./_for-of */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_for-of.js");
+var anInstance = __webpack_require__(/*! ./_an-instance */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-instance.js");
+var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-object.js");
+var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-to-string-tag.js");
+var dP = __webpack_require__(/*! ./_object-dp */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-dp.js").f;
+var each = __webpack_require__(/*! ./_array-methods */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-methods.js")(0);
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_descriptors.js");
+
+module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
+  var Base = global[NAME];
+  var C = Base;
+  var ADDER = IS_MAP ? 'set' : 'add';
+  var proto = C && C.prototype;
+  var O = {};
+  if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function () {
+    new C().entries().next();
+  }))) {
+    // create collection constructor
+    C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
+    redefineAll(C.prototype, methods);
+    meta.NEED = true;
+  } else {
+    C = wrapper(function (target, iterable) {
+      anInstance(target, C, NAME, '_c');
+      target._c = new Base();
+      if (iterable != undefined) forOf(iterable, IS_MAP, target[ADDER], target);
+    });
+    each('add,clear,delete,forEach,get,has,set,keys,values,entries,toJSON'.split(','), function (KEY) {
+      var IS_ADDER = KEY == 'add' || KEY == 'set';
+      if (KEY in proto && !(IS_WEAK && KEY == 'clear')) hide(C.prototype, KEY, function (a, b) {
+        anInstance(this, C, KEY);
+        if (!IS_ADDER && IS_WEAK && !isObject(a)) return KEY == 'get' ? undefined : false;
+        var result = this._c[KEY](a === 0 ? 0 : a, b);
+        return IS_ADDER ? this : result;
+      });
+    });
+    IS_WEAK || dP(C.prototype, 'size', {
+      get: function () {
+        return this._c.size;
+      }
+    });
+  }
+
+  setToStringTag(C, NAME);
+
+  O[NAME] = C;
+  $export($export.G + $export.W + $export.F, O);
+
+  if (!IS_WEAK) common.setStrong(C, NAME, IS_MAP);
+
+  return C;
 };
 
 
@@ -1621,6 +2462,44 @@ module.exports = function (exec) {
     return true;
   }
 };
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_for-of.js":
+/*!**********************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_for-of.js ***!
+  \**********************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 9:14-28 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var ctx = __webpack_require__(/*! ./_ctx */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_ctx.js");
+var call = __webpack_require__(/*! ./_iter-call */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-array-iter.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-object.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-length.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator-method.js");
+var BREAK = {};
+var RETURN = {};
+var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
+  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);
+  var f = ctx(fn, that, entries ? 2 : 1);
+  var index = 0;
+  var length, step, iterator, result;
+  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');
+  // fast case for arrays with default iterator
+  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {
+    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
+    if (result === BREAK || result === RETURN) return result;
+  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {
+    result = call(iterator, f, step.value, entries);
+    if (result === BREAK || result === RETURN) return result;
+  }
+};
+exports.BREAK = BREAK;
+exports.RETURN = RETURN;
 
 
 /***/ }),
@@ -2515,6 +3394,26 @@ module.exports = function (bitmap, value) {
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine-all.js":
+/*!****************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine-all.js ***!
+  \****************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var hide = __webpack_require__(/*! ./_hide */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_hide.js");
+module.exports = function (target, src, safe) {
+  for (var key in src) {
+    if (safe && target[key]) target[key] = src[key];
+    else hide(target, key, src[key]);
+  } return target;
+};
+
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine.js":
 /*!************************************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine.js ***!
@@ -2525,6 +3424,74 @@ module.exports = function (bitmap, value) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__(/*! ./_hide */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_hide.js");
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-from.js":
+/*!***********************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-from.js ***!
+  \***********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 8:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+// https://tc39.github.io/proposal-setmap-offrom/
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+var aFunction = __webpack_require__(/*! ./_a-function */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_a-function.js");
+var ctx = __webpack_require__(/*! ./_ctx */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_ctx.js");
+var forOf = __webpack_require__(/*! ./_for-of */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_for-of.js");
+
+module.exports = function (COLLECTION) {
+  $export($export.S, COLLECTION, { from: function from(source /* , mapFn, thisArg */) {
+    var mapFn = arguments[1];
+    var mapping, A, n, cb;
+    aFunction(this);
+    mapping = mapFn !== undefined;
+    if (mapping) aFunction(mapFn);
+    if (source == undefined) return new this();
+    A = [];
+    if (mapping) {
+      n = 0;
+      cb = ctx(mapFn, arguments[2], 2);
+      forOf(source, false, function (nextItem) {
+        A.push(cb(nextItem, n++));
+      });
+    } else {
+      forOf(source, false, A.push, A);
+    }
+    return new this(A);
+  } });
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-of.js":
+/*!*********************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-of.js ***!
+  \*********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+// https://tc39.github.io/proposal-setmap-offrom/
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+
+module.exports = function (COLLECTION) {
+  $export($export.S, COLLECTION, { of: function of() {
+    var length = arguments.length;
+    var A = new Array(length);
+    while (length--) A[length] = arguments[length];
+    return new this(A);
+  } });
+};
 
 
 /***/ }),
@@ -2798,6 +3765,24 @@ module.exports = function (key) {
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_validate-collection.js":
+/*!***********************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_validate-collection.js ***!
+  \***********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-object.js");
+module.exports = function (it, TYPE) {
+  if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');
+  return it;
+};
+
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_wks-define.js":
 /*!**************************************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_wks-define.js ***!
@@ -2876,6 +3861,26 @@ module.exports = __webpack_require__(/*! ./_core */ "../node_modules/@babel/runt
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
     || Iterators[classof(it)];
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator.js":
+/*!********************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator.js ***!
+  \********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var anObject = __webpack_require__(/*! ./_an-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-object.js");
+var get = __webpack_require__(/*! ./core.get-iterator-method */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/core.get-iterator-method.js");
+module.exports = __webpack_require__(/*! ./_core */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").getIterator = function (it) {
+  var iterFn = get(it);
+  if (typeof iterFn != 'function') throw TypeError(it + ' is not iterable!');
+  return anObject(iterFn.call(it));
 };
 
 
@@ -3550,6 +4555,80 @@ setToStringTag(global.JSON, 'JSON', true);
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.weak-map.js":
+/*!***************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.weak-map.js ***!
+  \***************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 40:15-29 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var global = __webpack_require__(/*! ./_global */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_global.js");
+var each = __webpack_require__(/*! ./_array-methods */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_array-methods.js")(0);
+var redefine = __webpack_require__(/*! ./_redefine */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_redefine.js");
+var meta = __webpack_require__(/*! ./_meta */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_meta.js");
+var assign = __webpack_require__(/*! ./_object-assign */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-assign.js");
+var weak = __webpack_require__(/*! ./_collection-weak */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection-weak.js");
+var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_is-object.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_validate-collection.js");
+var NATIVE_WEAK_MAP = __webpack_require__(/*! ./_validate-collection */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_validate-collection.js");
+var IS_IE11 = !global.ActiveXObject && 'ActiveXObject' in global;
+var WEAK_MAP = 'WeakMap';
+var getWeak = meta.getWeak;
+var isExtensible = Object.isExtensible;
+var uncaughtFrozenStore = weak.ufstore;
+var InternalMap;
+
+var wrapper = function (get) {
+  return function WeakMap() {
+    return get(this, arguments.length > 0 ? arguments[0] : undefined);
+  };
+};
+
+var methods = {
+  // 23.3.3.3 WeakMap.prototype.get(key)
+  get: function get(key) {
+    if (isObject(key)) {
+      var data = getWeak(key);
+      if (data === true) return uncaughtFrozenStore(validate(this, WEAK_MAP)).get(key);
+      return data ? data[this._i] : undefined;
+    }
+  },
+  // 23.3.3.5 WeakMap.prototype.set(key, value)
+  set: function set(key, value) {
+    return weak.def(validate(this, WEAK_MAP), key, value);
+  }
+};
+
+// 23.3 WeakMap Objects
+var $WeakMap = module.exports = __webpack_require__(/*! ./_collection */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_collection.js")(WEAK_MAP, wrapper, methods, weak, true, true);
+
+// IE11 WeakMap frozen keys fix
+if (NATIVE_WEAK_MAP && IS_IE11) {
+  InternalMap = weak.getConstructor(wrapper, WEAK_MAP);
+  assign(InternalMap.prototype, methods);
+  meta.NEED = true;
+  each(['delete', 'has', 'get', 'set'], function (key) {
+    var proto = $WeakMap.prototype;
+    var method = proto[key];
+    redefine(proto, key, function (a, b) {
+      // store frozen objects on internal weakmap shim
+      if (isObject(a) && !isExtensible(a)) {
+        if (!this._f) this._f = new InternalMap();
+        var result = this._f[key](a, b);
+        return key == 'set' ? this : result;
+      // store all the rest on native weakmap
+      } return method.call(this, a, b);
+    });
+  });
+}
+
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js":
 /*!******************************************************************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js ***!
@@ -3606,6 +4685,34 @@ __webpack_require__(/*! ./_wks-define */ "../node_modules/@babel/runtime-corejs2
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./_wks-define */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_wks-define.js")('observable');
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.from.js":
+/*!********************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.from.js ***!
+  \********************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-weakmap.from
+__webpack_require__(/*! ./_set-collection-from */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-from.js")('WeakMap');
+
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.of.js":
+/*!******************************************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.weak-map.of.js ***!
+  \******************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-weakmap.of
+__webpack_require__(/*! ./_set-collection-of */ "../node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_set-collection-of.js")('WeakMap');
 
 
 /***/ }),
@@ -4997,6 +6104,137 @@ function App() {
 
 /***/ }),
 
+/***/ "../core/app/assets/js/hooks/use-action.js":
+/*!*************************************************!*\
+  !*** ../core/app/assets/js/hooks/use-action.js ***!
+  \*************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 5:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = useAction;
+
+function useAction() {
+  return {
+    backToDashboard: function backToDashboard() {
+      if (window.top === window) {
+        // Directly.
+        window.top.location = elementorAppConfig.return_url;
+      } else {
+        // Iframe.
+        window.top.$e.run('app/close');
+      }
+    }
+  };
+}
+
+/***/ }),
+
+/***/ "../core/app/assets/js/hooks/use-upload-file.js":
+/*!******************************************************!*\
+  !*** ../core/app/assets/js/hooks/use-upload-file.js ***!
+  \******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = useUploadFile;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread2 */ "../node_modules/@babel/runtime-corejs2/helpers/objectSpread2.js"));
+
+var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js"));
+
+__webpack_require__(/*! core-js/modules/es6.function.name */ "../node_modules/core-js/modules/es6.function.name.js");
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _react = __webpack_require__(/*! react */ "react");
+
+function useUploadFile(fileName, action, data) {
+  var _useState = (0, _react.useState)(),
+      _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+      uploadFile = _useState2[0],
+      setUploadFile = _useState2[1],
+      uploadInitialState = {
+    status: 'initial',
+    isComplete: false
+  },
+      _useState3 = (0, _react.useState)(uploadInitialState),
+      _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
+      uploadFileStatus = _useState4[0],
+      setUploadFileStatus = _useState4[1];
+
+  (0, _react.useEffect)(function () {
+    if (uploadFile) {
+      var formData = new FormData();
+      formData.append(fileName || uploadFile.name, uploadFile);
+      formData.append('action', action);
+      formData.append('nonce', elementorCommon.config.ajax.nonce);
+      formData.append('data', (0, _stringify.default)(data));
+      var options = {
+        type: 'post',
+        url: elementorCommon.config.ajax.url,
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function success(response) {
+          var status = response.success ? 'success' : 'error';
+          setUploadFileStatus(function (prevState) {
+            return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, prevState), {}, {
+              status: status
+            });
+          });
+        },
+        error: function error() {
+          setUploadFileStatus(function (prevState) {
+            return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, prevState), {}, {
+              status: 'error'
+            });
+          });
+        },
+        complete: function complete() {
+          setUploadFileStatus(function (prevState) {
+            return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, prevState), {}, {
+              isComplete: true
+            });
+          });
+        }
+      };
+      jQuery.ajax(options);
+    }
+  }, [uploadFile]);
+  return {
+    uploadFile: uploadFile,
+    setUploadFile: setUploadFile,
+    uploadFileStatus: uploadFileStatus
+  };
+}
+
+/***/ }),
+
 /***/ "../core/app/assets/js/layout/content.js":
 /*!***********************************************!*\
   !*** ../core/app/assets/js/layout/content.js ***!
@@ -5399,6 +6637,314 @@ Sidebar.propTypes = {
 
 /***/ }),
 
+/***/ "../core/app/assets/js/molecules/dashboard-button.js":
+/*!***********************************************************!*\
+  !*** ../core/app/assets/js/molecules/dashboard-button.js ***!
+  \***********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = DashboardButton;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _button = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/button */ "../core/app/assets/js/ui/molecules/button.js"));
+
+var _useAction = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-action */ "../core/app/assets/js/hooks/use-action.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+function DashboardButton(props) {
+  var action = (0, _useAction.default)(),
+      baseClassName = 'e-app-dashboard-button',
+      classes = [baseClassName, props.className];
+  return /*#__PURE__*/_react.default.createElement(_button.default, (0, _extends2.default)({}, props, {
+    className: (0, _utils.arrayToClassName)(classes),
+    text: props.text,
+    onClick: action.backToDashboard
+  }));
+}
+
+DashboardButton.propTypes = {
+  className: PropTypes.string,
+  text: PropTypes.string
+};
+DashboardButton.defaultProps = {
+  className: '',
+  variant: 'contained',
+  color: 'primary',
+  text: __('Back to dashboard', 'elementor')
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/molecules/go-pro-button.js":
+/*!********************************************************!*\
+  !*** ../core/app/assets/js/molecules/go-pro-button.js ***!
+  \********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = GoProButton;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _button = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/button */ "../core/app/assets/js/ui/molecules/button.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+function GoProButton(props) {
+  var baseClassName = 'e-app-go-pro-button',
+      classes = [baseClassName, props.className];
+  return /*#__PURE__*/_react.default.createElement(_button.default, (0, _extends2.default)({}, props, {
+    className: (0, _utils.arrayToClassName)(classes),
+    text: props.text
+  }));
+}
+
+GoProButton.propTypes = {
+  className: PropTypes.string,
+  text: PropTypes.string
+};
+GoProButton.defaultProps = {
+  className: '',
+  variant: 'contained',
+  size: 'sm',
+  color: 'cta',
+  target: '_blank',
+  rel: 'noopener noreferrer',
+  text: __('Go Pro', 'elementor')
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/molecules/upload-file.js":
+/*!******************************************************!*\
+  !*** ../core/app/assets/js/molecules/upload-file.js ***!
+  \******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = UploadFile;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _button = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/button */ "../core/app/assets/js/ui/molecules/button.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+__webpack_require__(/*! ./upload-file.scss */ "../core/app/assets/js/molecules/upload-file.scss");
+
+function UploadFile(props) {
+  var fileInput = (0, _react.useRef)(null),
+      baseClassName = 'e-app-upload-file',
+      classes = [baseClassName, props.className];
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: (0, _utils.arrayToClassName)(classes)
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    ref: fileInput,
+    type: "file",
+    accept: props.filetypes.map(function (type) {
+      return '.' + type;
+    }).join(', '),
+    className: "e-app-upload-file__input",
+    onChange: function onChange(event) {
+      var file = event.target.files[0];
+
+      if (file && (0, _utils.isOneOf)(file.type, props.filetypes)) {
+        props.onFileSelect(file, event);
+      } else {
+        fileInput.current.value = '';
+        props.onError();
+      }
+    }
+  }), /*#__PURE__*/_react.default.createElement(_button.default, {
+    className: "e-app-upload-file__button",
+    text: props.text,
+    variant: "contained",
+    color: "primary",
+    size: "lg",
+    hideText: props.isLoading,
+    icon: props.isLoading ? 'eicon-loading eicon-animation-spin' : '',
+    onClick: function onClick() {
+      if (!props.isLoading) {
+        fileInput.current.click();
+      }
+    }
+  }));
+}
+
+UploadFile.propTypes = {
+  className: PropTypes.string,
+  text: PropTypes.string,
+  onFileSelect: PropTypes.func,
+  isLoading: PropTypes.bool,
+  filetypes: PropTypes.array.isRequired,
+  onError: PropTypes.func
+};
+UploadFile.defaultProps = {
+  className: '',
+  text: __('Select File', 'elementor'),
+  onError: function onError() {}
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/organisms/drop-zone.js":
+/*!****************************************************!*\
+  !*** ../core/app/assets/js/organisms/drop-zone.js ***!
+  \****************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = DropZone;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _uploadFile = _interopRequireDefault(__webpack_require__(/*! elementor-app/molecules/upload-file */ "../core/app/assets/js/molecules/upload-file.js"));
+
+var _dragDrop = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/drag-drop */ "../core/app/assets/js/ui/atoms/drag-drop.js"));
+
+var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../core/app/assets/js/ui/atoms/icon.js"));
+
+var _heading = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/heading */ "../core/app/assets/js/ui/atoms/heading.js"));
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+__webpack_require__(/*! ./drop-zone.scss */ "../core/app/assets/js/organisms/drop-zone.scss");
+
+function DropZone(props) {
+  var classes = ['e-app-drop-zone', props.className],
+      dragDropEvents = {
+    onDrop: function onDrop(event) {
+      if (!props.isLoading) {
+        var file = event.dataTransfer.files[0];
+
+        if (file && (0, _utils.isOneOf)(file.type, props.filetypes)) {
+          props.onFileSelect(file, event);
+        } else {
+          props.onError();
+        }
+      }
+    }
+  };
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: (0, _utils.arrayToClassName)(classes)
+  }, /*#__PURE__*/_react.default.createElement(_dragDrop.default, (0, _extends2.default)({}, dragDropEvents, {
+    isLoading: props.isLoading
+  }), props.icon && /*#__PURE__*/_react.default.createElement(_icon.default, {
+    className: "e-app-drop-zone__icon ".concat(props.icon)
+  }), props.heading && /*#__PURE__*/_react.default.createElement(_heading.default, {
+    variant: "display-3"
+  }, props.heading), props.text && /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xl",
+    className: "e-app-drop-zone__text"
+  }, props.text), props.secondaryText && /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xl",
+    className: "e-app-drop-zone__secondary-text"
+  }, props.secondaryText), props.showButton && /*#__PURE__*/_react.default.createElement(_uploadFile.default, {
+    isLoading: props.isLoading,
+    onFileSelect: props.onFileSelect,
+    onError: props.onError,
+    text: props.buttonText,
+    filetypes: props.filetypes
+  })));
+}
+
+DropZone.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any,
+  onFileSelect: PropTypes.func.isRequired,
+  heading: PropTypes.string,
+  text: PropTypes.string,
+  secondaryText: PropTypes.string,
+  buttonText: PropTypes.string,
+  icon: PropTypes.string,
+  showButton: PropTypes.bool,
+  showIcon: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  filetypes: PropTypes.array.isRequired,
+  onError: PropTypes.func
+};
+DropZone.defaultProps = {
+  className: '',
+  icon: 'eicon-library-upload',
+  showButton: true,
+  showIcon: true,
+  onError: function onError() {}
+};
+
+/***/ }),
+
 /***/ "../core/app/assets/js/organisms/error-boundary.js":
 /*!*********************************************************!*\
   !*** ../core/app/assets/js/organisms/error-boundary.js ***!
@@ -5511,6 +7057,66 @@ exports.default = ErrorBoundary;
 
 /***/ }),
 
+/***/ "../core/app/assets/js/organisms/wizard-footer.js":
+/*!********************************************************!*\
+  !*** ../core/app/assets/js/organisms/wizard-footer.js ***!
+  \********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = WizardFooter;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _grid = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/grid/grid */ "../core/app/assets/js/ui/grid/grid.js"));
+
+__webpack_require__(/*! ./wizard-footer.scss */ "../core/app/assets/js/organisms/wizard-footer.scss");
+
+function WizardFooter(props) {
+  var baseClassName = 'e-app-wizard-footer',
+      classes = [baseClassName, props.className];
+
+  if (props.separator) {
+    classes.push(baseClassName + '__separator');
+  }
+
+  return /*#__PURE__*/_react.default.createElement(_grid.default, (0, _extends2.default)({
+    container: true
+  }, props, {
+    className: (0, _utils.arrayToClassName)(classes)
+  }), props.children);
+}
+
+WizardFooter.propTypes = {
+  className: PropTypes.string,
+  justify: PropTypes.any,
+  separator: PropTypes.any,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+};
+WizardFooter.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
 /***/ "../core/app/assets/js/pages/index.js":
 /*!********************************************!*\
   !*** ../core/app/assets/js/pages/index.js ***!
@@ -5590,6 +7196,222 @@ function NotFound() {
 
 /***/ }),
 
+/***/ "../core/app/assets/js/ui/atoms/box.js":
+/*!*********************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/box.js ***!
+  \*********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Box;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+__webpack_require__(/*! ./box.scss */ "../core/app/assets/js/ui/atoms/box.scss");
+
+function Box(props) {
+  var baseClassName = 'eps-box',
+      classes = [baseClassName, props.className];
+  var style;
+
+  if (props.padding) {
+    style = {
+      '--eps-box-padding': (0, _utils.pxToRem)(props.padding)
+    };
+    classes.push(baseClassName + '--padding');
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: style,
+    className: (0, _utils.arrayToClassName)(classes)
+  }, props.children);
+}
+
+Box.propTypes = {
+  className: PropTypes.string,
+  padding: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+};
+Box.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/atoms/checkbox.js":
+/*!**************************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/checkbox.js ***!
+  \**************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Checkbox;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+__webpack_require__(/*! ./checkbox.scss */ "../core/app/assets/js/ui/atoms/checkbox.scss");
+
+function Checkbox(props) {
+  var baseClassName = 'eps-checkbox',
+      classes = [baseClassName, props.className];
+
+  if (props.rounded) {
+    classes.push(baseClassName + '--rounded');
+  }
+
+  return /*#__PURE__*/_react.default.createElement("input", (0, _extends2.default)({}, props, {
+    type: "checkbox",
+    disabled: props.disabled,
+    className: (0, _utils.arrayToClassName)(classes)
+  }));
+}
+
+Checkbox.propTypes = {
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  rounded: PropTypes.bool
+};
+Checkbox.defaultProps = {
+  className: '',
+  disabled: false
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/atoms/drag-drop.js":
+/*!***************************************************!*\
+  !*** ../core/app/assets/js/ui/atoms/drag-drop.js ***!
+  \***************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = DragDrop;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "../node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _utils = __webpack_require__(/*! ../../utils/utils */ "../core/app/assets/js/utils/utils.js");
+
+__webpack_require__(/*! ./drag-drop.scss */ "../core/app/assets/js/ui/atoms/drag-drop.scss");
+
+function DragDrop(props) {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+      isDragOver = _useState2[0],
+      setIsDragOver = _useState2[1],
+      getClassName = function getClassName() {
+    var baseClassName = 'e-app-drag-drop',
+        classes = [baseClassName, props.className];
+
+    if (isDragOver && !props.isLoading) {
+      classes.push(baseClassName + '--drag-over');
+    }
+
+    return (0, _utils.arrayToClassName)(classes);
+  },
+      onDragDropActions = function onDragDropActions(event) {
+    event.preventDefault();
+    event.stopPropagation();
+  },
+      dragDropEvents = {
+    onDrop: function onDrop(event) {
+      onDragDropActions(event);
+      setIsDragOver(false);
+
+      if (props.onDrop) {
+        props.onDrop(event);
+      }
+    },
+    onDragOver: function onDragOver(event) {
+      onDragDropActions(event);
+      setIsDragOver(true);
+
+      if (props.onDragOver) {
+        props.onDragOver(event);
+      }
+    },
+    onDragLeave: function onDragLeave(event) {
+      onDragDropActions(event);
+      setIsDragOver(false);
+
+      if (props.onDragLeave) {
+        props.onDragLeave(event);
+      }
+    }
+  };
+
+  return /*#__PURE__*/_react.default.createElement("div", (0, _extends2.default)({}, dragDropEvents, {
+    className: getClassName()
+  }), props.children);
+}
+
+DragDrop.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any,
+  onDrop: PropTypes.func,
+  onDragLeave: PropTypes.func,
+  onDragOver: PropTypes.func,
+  isLoading: PropTypes.bool
+};
+DragDrop.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
 /***/ "../core/app/assets/js/ui/atoms/heading.js":
 /*!*************************************************!*\
   !*** ../core/app/assets/js/ui/atoms/heading.js ***!
@@ -5615,7 +7437,7 @@ exports.default = Heading;
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _utils = _interopRequireDefault(__webpack_require__(/*! ../../utils/utils */ "../core/app/assets/js/utils/utils.js"));
+var _utils = __webpack_require__(/*! ../../utils/utils */ "../core/app/assets/js/utils/utils.js");
 
 function Heading(props) {
   var baseClassName = 'eps',
@@ -5627,7 +7449,7 @@ function Heading(props) {
 
   var Element = function Element() {
     return _react.default.createElement(props.tag, {
-      className: _utils.default.arrayToClassName(classes)
+      className: (0, _utils.arrayToClassName)(classes)
     }, props.children);
   };
 
@@ -5712,7 +7534,7 @@ exports.default = Text;
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _utils = _interopRequireDefault(__webpack_require__(/*! ../../utils/utils */ "../core/app/assets/js/utils/utils.js"));
+var _utils = __webpack_require__(/*! ../../utils/utils */ "../core/app/assets/js/utils/utils.js");
 
 function Text(props) {
   var baseClassName = 'eps',
@@ -5722,7 +7544,7 @@ function Text(props) {
 
   var Element = function Element() {
     return _react.default.createElement(props.tag, {
-      className: _utils.default.arrayToClassName(classes)
+      className: (0, _utils.arrayToClassName)(classes)
     }, props.children);
   };
 
@@ -6133,6 +7955,8 @@ __webpack_require__(/*! core-js/modules/es6.regexp.match */ "../node_modules/cor
 
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/toConsumableArray */ "../node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js"));
 
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
 __webpack_require__(/*! ./grid.scss */ "../core/app/assets/js/ui/grid/grid.scss");
 
 function Grid(props) {
@@ -6163,9 +7987,7 @@ function Grid(props) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     style: getStyle(),
-    className: classes.filter(function (classItem) {
-      return '' !== classItem;
-    }).join(' ')
+    className: (0, _utils.arrayToClassName)(classes)
   }, props.children);
 }
 
@@ -6219,7 +8041,7 @@ Grid.propTypes = {
   lg: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   xl: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   xxl: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+  children: PropTypes.any.isRequired
 };
 Grid.defaultProps = {
   className: ''
@@ -6269,8 +8091,6 @@ var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/r
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 
 var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../core/app/assets/js/ui/atoms/icon.js"));
-
-__webpack_require__(/*! ./buttons.scss */ "../core/app/assets/js/ui/molecules/buttons.scss");
 
 var Button = /*#__PURE__*/function (_React$Component) {
   (0, _inherits2.default)(Button, _React$Component);
@@ -6361,6 +8181,10 @@ var Button = /*#__PURE__*/function (_React$Component) {
         attributes.onClick = this.props.onClick;
       }
 
+      if (this.props.rel) {
+        attributes.rel = this.props.rel;
+      }
+
       var buttonContent = /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, this.getIcon(), this.getText());
 
       if (this.props.url) {
@@ -6408,7 +8232,8 @@ exports.default = Button;
   variant: PropTypes.oneOf(['contained', 'underlined', '']),
   color: PropTypes.oneOf(['primary', 'secondary', 'cta', 'link', 'disabled']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  target: PropTypes.string
+  target: PropTypes.string,
+  rel: PropTypes.string
 });
 (0, _defineProperty2.default)(Button, "defaultProps", {
   id: '',
@@ -6419,10 +8244,681 @@ exports.default = Button;
 
 /***/ }),
 
+/***/ "../core/app/assets/js/ui/molecules/inline-link.js":
+/*!*********************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/inline-link.js ***!
+  \*********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = InlineLink;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! core-js/modules/es7.array.includes */ "../node_modules/core-js/modules/es7.array.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.string.includes */ "../node_modules/core-js/modules/es6.string.includes.js");
+
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+
+var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+__webpack_require__(/*! ./inline-link.scss */ "../core/app/assets/js/ui/molecules/inline-link.scss");
+
+function InlineLink(props) {
+  var baseClassName = 'eps-inline-link',
+      colorClassName = "".concat(baseClassName, "--color-").concat(props.color),
+      underlineClassName = 'none' !== props.underline ? "".concat(baseClassName, "--underline-").concat(props.underline) : '',
+      italicClassName = props.italic ? "".concat(baseClassName, "--italic") : '',
+      classes = [baseClassName, colorClassName, underlineClassName, italicClassName, props.className],
+      className = (0, _utils.arrayToClassName)(classes),
+      getRouterLink = function getRouterLink() {
+    return /*#__PURE__*/_react.default.createElement(_router.LocationProvider, {
+      history: _router2.default.appHistory
+    }, /*#__PURE__*/_react.default.createElement(_router.Link, {
+      to: props.url,
+      className: className
+    }, props.children));
+  },
+      getExternalLink = function getExternalLink() {
+    return /*#__PURE__*/_react.default.createElement("a", {
+      href: props.url,
+      target: props.target,
+      rel: props.rel,
+      className: className
+    }, props.children);
+  };
+
+  return props.url.includes('http') ? getExternalLink() : getRouterLink();
+}
+
+InlineLink.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.string,
+  url: PropTypes.string,
+  target: PropTypes.string,
+  rel: PropTypes.string,
+  text: PropTypes.string,
+  color: PropTypes.oneOf(['primary', 'secondary', 'cta', 'link', 'disabled']),
+  underline: PropTypes.oneOf(['none', 'hover', 'always']),
+  italic: PropTypes.bool
+};
+InlineLink.defaultProps = {
+  className: '',
+  color: 'link',
+  underline: 'always',
+  target: '_blank',
+  rel: 'noopener noreferrer'
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/molecules/list-item.js":
+/*!*******************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/list-item.js ***!
+  \*******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ListItem;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+function ListItem(props) {
+  var baseClassName = 'eps-list__item',
+      classes = [baseClassName, props.className];
+  var style;
+
+  if (props.padding) {
+    style = {
+      '--eps-list-item-padding': (0, _utils.pxToRem)(props.padding)
+    };
+    classes.push(baseClassName + '--padding');
+  }
+
+  return /*#__PURE__*/_react.default.createElement("li", {
+    style: style,
+    className: (0, _utils.arrayToClassName)(classes)
+  }, props.children);
+}
+
+ListItem.propTypes = {
+  className: PropTypes.string,
+  padding: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+};
+ListItem.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/molecules/list.js":
+/*!**************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/list.js ***!
+  \**************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = List;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _listItem = _interopRequireDefault(__webpack_require__(/*! ./list-item */ "../core/app/assets/js/ui/molecules/list-item.js"));
+
+__webpack_require__(/*! ./list.scss */ "../core/app/assets/js/ui/molecules/list.scss");
+
+function List(props) {
+  var baseClassName = 'eps-list',
+      classes = [baseClassName, props.className];
+  var style;
+
+  if (props.padding) {
+    style = {
+      '--eps-list-padding': (0, _utils.pxToRem)(props.padding)
+    };
+    classes.push(baseClassName + '--padding');
+  }
+
+  if (props.separated) {
+    classes.push(baseClassName + '--separated');
+  }
+
+  return /*#__PURE__*/_react.default.createElement("ul", {
+    style: style,
+    className: (0, _utils.arrayToClassName)(classes)
+  }, props.children);
+}
+
+List.propTypes = {
+  className: PropTypes.string,
+  divided: PropTypes.any,
+  separated: PropTypes.any,
+  padding: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+};
+List.defaultProps = {
+  className: ''
+};
+List.Item = _listItem.default;
+
+/***/ }),
+
+/***/ "../core/app/assets/js/ui/molecules/notice.js":
+/*!****************************************************!*\
+  !*** ../core/app/assets/js/ui/molecules/notice.js ***!
+  \****************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Notice;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+__webpack_require__(/*! ./notice.scss */ "../core/app/assets/js/ui/molecules/notice.scss");
+
+function Notice(props) {
+  var baseClassName = 'eps-notice',
+      classes = [baseClassName, props.className];
+
+  if (props.color) {
+    classes.push(baseClassName + '--' + props.color);
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: (0, _utils.arrayToClassName)(classes)
+  }, /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xs",
+    className: "eps-notice__text"
+  }, props.label && /*#__PURE__*/_react.default.createElement("strong", null, props.label + ': '), " ", props.children));
+}
+
+Notice.propTypes = {
+  className: PropTypes.string,
+  color: PropTypes.string,
+  label: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.arrayOf(PropTypes.object)]).isRequired
+};
+Notice.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
 /***/ "../core/app/assets/js/utils/utils.js":
 /*!********************************************!*\
   !*** ../core/app/assets/js/utils/utils.js ***!
   \********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 5:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.isOneOf = exports.arrayToClassName = exports.pxToRem = void 0;
+
+__webpack_require__(/*! core-js/modules/es7.array.includes */ "../node_modules/core-js/modules/es7.array.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.string.includes */ "../node_modules/core-js/modules/es6.string.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
+
+__webpack_require__(/*! core-js/modules/es6.regexp.to-string */ "../node_modules/core-js/modules/es6.regexp.to-string.js");
+
+__webpack_require__(/*! core-js/modules/es6.object.to-string */ "../node_modules/core-js/modules/es6.object.to-string.js");
+
+var pxToRem = function pxToRem(pixels) {
+  if (!pixels) {
+    return;
+  } else if ('string' !== typeof pixels) {
+    pixels = pixels.toString();
+  }
+
+  return pixels.split(' ').map(function (value) {
+    return "".concat(value * 0.0625, "rem");
+  }).join(' ');
+};
+
+exports.pxToRem = pxToRem;
+
+var arrayToClassName = function arrayToClassName(array) {
+  return array.filter(function (classItem) {
+    return '' !== classItem;
+  }).join(' ');
+};
+
+exports.arrayToClassName = arrayToClassName;
+
+var isOneOf = function isOneOf(filetype, filetypeOptions) {
+  return filetypeOptions.some(function (type) {
+    return filetype.includes(type);
+  });
+};
+
+exports.isOneOf = isOneOf;
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/context/export/export-context-reducer.js":
+/*!********************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/context/export/export-context-reducer.js ***!
+  \********************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.reducer = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/toConsumableArray */ "../node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js"));
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread2 */ "../node_modules/@babel/runtime-corejs2/helpers/objectSpread2.js"));
+
+__webpack_require__(/*! core-js/modules/es7.array.includes */ "../node_modules/core-js/modules/es7.array.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.string.includes */ "../node_modules/core-js/modules/es6.string.includes.js");
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "../node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "../node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
+
+var ReducerActions = /*#__PURE__*/function () {
+  function ReducerActions() {
+    (0, _classCallCheck2.default)(this, ReducerActions);
+  }
+
+  (0, _createClass2.default)(ReducerActions, null, [{
+    key: "updateIncludes",
+    value: function updateIncludes(state, value, action) {
+      if ('add' === action) {
+        // If the value already exists, then do nothing.
+        if (state.includes.includes(value)) {
+          return state;
+        }
+
+        return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, state), {}, {
+          includes: [].concat((0, _toConsumableArray2.default)(state.includes), [value])
+        });
+      } else if ('remove' === action) {
+        return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, state), {}, {
+          includes: state.includes.filter(function (item) {
+            return item !== value;
+          })
+        });
+      }
+
+      return state;
+    }
+  }]);
+  return ReducerActions;
+}();
+
+var reducer = function reducer(state, action) {
+  switch (action.type) {
+    case 'SET_DOWNLOAD_URL':
+      return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, state), {}, {
+        downloadURL: action.payload
+      });
+
+    case 'ADD_INCLUDE':
+      return ReducerActions.updateIncludes(state, action.payload, 'add');
+
+    case 'REMOVE_INCLUDE':
+      return ReducerActions.updateIncludes(state, action.payload, 'remove');
+
+    default:
+      return state;
+  }
+};
+
+exports.reducer = reducer;
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/context/export/export-context.js":
+/*!************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/context/export/export-context.js ***!
+  \************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ExportContext;
+exports.Context = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _exportContextReducer = __webpack_require__(/*! ./export-context-reducer */ "../core/app/modules/import-export/assets/js/context/export/export-context-reducer.js");
+
+var Context = _react.default.createContext();
+
+exports.Context = Context;
+
+function ExportContext(props) {
+  var initialState = {
+    includes: [],
+    downloadURL: ''
+  },
+      _useReducer = (0, _react.useReducer)(_exportContextReducer.reducer, initialState),
+      _useReducer2 = (0, _slicedToArray2.default)(_useReducer, 2),
+      data = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  return /*#__PURE__*/_react.default.createElement(Context.Provider, {
+    value: {
+      data: data,
+      dispatch: dispatch
+    }
+  }, props.children);
+}
+
+ExportContext.propTypes = {
+  children: PropTypes.object.isRequired
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/context/import/import-context-reducer.js":
+/*!********************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/context/import/import-context-reducer.js ***!
+  \********************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.reducer = void 0;
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread2 */ "../node_modules/@babel/runtime-corejs2/helpers/objectSpread2.js"));
+
+var reducer = function reducer(state, action) {
+  switch (action.type) {
+    case 'SET_FILE':
+      return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, state), {}, {
+        file: action.payload
+      });
+
+    default:
+      return state;
+  }
+};
+
+exports.reducer = reducer;
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/context/import/import-context.js":
+/*!************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/context/import/import-context.js ***!
+  \************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ImportContext;
+exports.Context = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _importContextReducer = __webpack_require__(/*! ./import-context-reducer */ "../core/app/modules/import-export/assets/js/context/import/import-context-reducer.js");
+
+var Context = _react.default.createContext();
+
+exports.Context = Context;
+
+function ImportContext(props) {
+  var initialState = {
+    file: null
+  },
+      _useReducer = (0, _react.useReducer)(_importContextReducer.reducer, initialState),
+      _useReducer2 = (0, _slicedToArray2.default)(_useReducer, 2),
+      data = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  return /*#__PURE__*/_react.default.createElement(Context.Provider, {
+    value: {
+      data: data,
+      dispatch: dispatch
+    }
+  }, props.children);
+}
+
+ImportContext.propTypes = {
+  children: PropTypes.object.isRequired
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/export.js":
+/*!*************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/export.js ***!
+  \*************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Export;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _exportContext = _interopRequireDefault(__webpack_require__(/*! ./context/export/export-context */ "../core/app/modules/import-export/assets/js/context/export/export-context.js"));
+
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+
+var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
+
+var _exportKit = _interopRequireDefault(__webpack_require__(/*! ./pages/export/export-kit/export-kit */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/export-kit.js"));
+
+var _exportComplete = _interopRequireDefault(__webpack_require__(/*! ./pages/export/export-complete/export-complete */ "../core/app/modules/import-export/assets/js/pages/export/export-complete/export-complete.js"));
+
+function Export() {
+  return /*#__PURE__*/_react.default.createElement(_exportContext.default, null, /*#__PURE__*/_react.default.createElement(_router.LocationProvider, {
+    history: _router2.default.appHistory
+  }, /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_exportComplete.default, {
+    path: "complete"
+  }), /*#__PURE__*/_react.default.createElement(_exportKit.default, {
+    default: true
+  }))));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/import.js":
+/*!*************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/import.js ***!
+  \*************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Import;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _importContext = _interopRequireDefault(__webpack_require__(/*! ./context/import/import-context */ "../core/app/modules/import-export/assets/js/context/import/import-context.js"));
+
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+
+var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
+
+var _importKit = _interopRequireDefault(__webpack_require__(/*! ./pages/import/import-kit/import-kit */ "../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.js"));
+
+var _importProcess = _interopRequireDefault(__webpack_require__(/*! ./pages/import/import-process/import-process */ "../core/app/modules/import-export/assets/js/pages/import/import-process/import-process.js"));
+
+var _importSuccess = _interopRequireDefault(__webpack_require__(/*! ./pages/import/import-success/import-success */ "../core/app/modules/import-export/assets/js/pages/import/import-success/import-success.js"));
+
+function Import() {
+  return /*#__PURE__*/_react.default.createElement(_importContext.default, null, /*#__PURE__*/_react.default.createElement(_router.LocationProvider, {
+    history: _router2.default.appHistory
+  }, /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_importSuccess.default, {
+    path: "success"
+  }), /*#__PURE__*/_react.default.createElement(_importProcess.default, {
+    path: "process"
+  }), /*#__PURE__*/_react.default.createElement(_importKit.default, {
+    default: true
+  }))));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/module.js":
+/*!*************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/module.js ***!
+  \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, __webpack_require__ */
 /*! CommonJS bailout: exports is used directly at 7:23-30 */
@@ -6441,34 +8937,1232 @@ _Object$defineProperty(exports, "__esModule", {
 
 exports.default = void 0;
 
-__webpack_require__(/*! core-js/modules/es6.regexp.split */ "../node_modules/core-js/modules/es6.regexp.split.js");
+var _createForOfIteratorHelper2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createForOfIteratorHelper */ "../node_modules/@babel/runtime-corejs2/helpers/createForOfIteratorHelper.js"));
 
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "../node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "../node_modules/@babel/runtime-corejs2/helpers/defineProperty.js"));
 
-var Utils = function Utils() {
-  (0, _classCallCheck2.default)(this, Utils);
+var _router = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
+
+var _import = _interopRequireDefault(__webpack_require__(/*! ./import */ "../core/app/modules/import-export/assets/js/import.js"));
+
+var _export = _interopRequireDefault(__webpack_require__(/*! ./export */ "../core/app/modules/import-export/assets/js/export.js"));
+
+var ImportExport = function ImportExport() {
+  (0, _classCallCheck2.default)(this, ImportExport);
+  (0, _defineProperty2.default)(this, "routes", [{
+    path: '/import/*',
+    component: _import.default
+  }, {
+    path: '/export/*',
+    component: _export.default
+  }]);
+
+  var _iterator = (0, _createForOfIteratorHelper2.default)(this.routes),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var route = _step.value;
+
+      _router.default.addRoute(route);
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
 };
 
-exports.default = Utils;
-(0, _defineProperty2.default)(Utils, "pxToRem", function (pixels) {
-  if (!pixels) {
-    return;
-  }
+exports.default = ImportExport;
 
-  return "".concat(pixels * 0.0625, "rem");
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-complete/export-complete.js":
+/*!***************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-complete/export-complete.js ***!
+  \***************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
 });
-(0, _defineProperty2.default)(Utils, "arrayToClassName", function (array) {
-  return array.filter(function (classItem) {
-    return '' !== classItem;
-  }).join(' ');
+
+exports.default = ExportComplete;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _exportContext = __webpack_require__(/*! ../../../context/export/export-context */ "../core/app/modules/import-export/assets/js/context/export/export-context.js");
+
+var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../core/app/modules/import-export/assets/js/templates/layout.js"));
+
+var _wizardStep = _interopRequireDefault(__webpack_require__(/*! ../../../ui/wizard-step/wizard-step */ "../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.js"));
+
+var _inlineLink = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/inline-link */ "../core/app/assets/js/ui/molecules/inline-link.js"));
+
+var _wizardFooter = _interopRequireDefault(__webpack_require__(/*! elementor-app/organisms/wizard-footer */ "../core/app/assets/js/organisms/wizard-footer.js"));
+
+var _dashboardButton = _interopRequireDefault(__webpack_require__(/*! elementor-app/molecules/dashboard-button */ "../core/app/assets/js/molecules/dashboard-button.js"));
+
+function ExportComplete() {
+  var exportContext = (0, _react.useContext)(_exportContext.Context),
+      getFooter = function getFooter() {
+    return /*#__PURE__*/_react.default.createElement(_wizardFooter.default, {
+      separator: true,
+      justify: "end"
+    }, /*#__PURE__*/_react.default.createElement(_dashboardButton.default, null));
+  },
+      getDownloadLink = function getDownloadLink() {
+    return /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
+      url: exportContext.data.downloadURL,
+      target: "_parent",
+      italic: true
+    }, __('Click Here', 'elementor'));
+  };
+
+  (0, _react.useEffect)(function () {
+    if (exportContext.data.downloadURL) {
+      window.location.assign(exportContext.data.downloadURL);
+    }
+  }, [exportContext.data.downloadURL]);
+  return /*#__PURE__*/_react.default.createElement(_layout.default, {
+    type: "export",
+    footer: getFooter()
+  }, /*#__PURE__*/_react.default.createElement(_wizardStep.default, {
+    image: elementorAppConfig.assets_url + 'images/go-pro.svg',
+    heading: __('Your export is ready!', 'elementor'),
+    description: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, __('The download should start in a few seconds.', 'elementor'), /*#__PURE__*/_react.default.createElement("br", null), __('You can then import the file and use it on other sites.', 'elementor')),
+    notice: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, __('Download not working?', 'elementor'), " ", getDownloadLink(), " ", __('to download', 'elementor'))
+  }));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/export-button/export-button.js":
+/*!*********************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/export-button/export-button.js ***!
+  \*********************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
 });
-(0, _defineProperty2.default)(Utils, "stringToRemValues", function (string) {
-  return string.split(' ').map(function (value) {
-    return Utils.pxToRem(value);
-  }).join(' ');
+
+exports.default = ExportButton;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! core-js/modules/es7.array.includes */ "../node_modules/core-js/modules/es7.array.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.string.includes */ "../node_modules/core-js/modules/es6.string.includes.js");
+
+var _exportContext = __webpack_require__(/*! ../../../../../context/export/export-context */ "../core/app/modules/import-export/assets/js/context/export/export-context.js");
+
+var _button = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/button */ "../core/app/assets/js/ui/molecules/button.js"));
+
+function ExportButton() {
+  var getDownloadUrl = function getDownloadUrl(exportContext, isDownloadAllowed) {
+    if (!isDownloadAllowed) {
+      return '';
+    }
+
+    var exportURL = elementorAppConfig['import-export'].exportURL,
+        exportData = {
+      elementor_export_kit: {
+        include: exportContext.data.includes
+      }
+    };
+    return exportURL + '&' + jQuery.param(exportData);
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_exportContext.Context.Consumer, null, function (exportContext) {
+    var isDownloadAllowed = exportContext.data.includes.length,
+        downloadURL = getDownloadUrl(exportContext, isDownloadAllowed);
+    return /*#__PURE__*/_react.default.createElement(_button.default, {
+      variant: "contained",
+      text: __('Export', 'elementor'),
+      color: isDownloadAllowed ? 'primary' : 'disabled',
+      url: "complete",
+      onClick: function onClick() {
+        if (isDownloadAllowed) {
+          exportContext.dispatch({
+            type: 'SET_DOWNLOAD_URL',
+            payload: downloadURL
+          });
+        }
+      }
+    });
+  });
+}
+
+ExportButton.propTypes = {
+  setIsDownloading: PropTypes.func
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/kit-content-checkbox/kit-content-checkbox.js":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/kit-content-checkbox/kit-content-checkbox.js ***!
+  \**********************************************************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
 });
+
+exports.default = KitContentCheckbox;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! core-js/modules/es7.array.includes */ "../node_modules/core-js/modules/es7.array.includes.js");
+
+__webpack_require__(/*! core-js/modules/es6.string.includes */ "../node_modules/core-js/modules/es6.string.includes.js");
+
+var _exportContext = __webpack_require__(/*! ../../../../../../../context/export/export-context */ "../core/app/modules/import-export/assets/js/context/export/export-context.js");
+
+var _checkbox = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/checkbox */ "../core/app/assets/js/ui/atoms/checkbox.js"));
+
+function KitContentCheckbox(props) {
+  var exportContext = (0, _react.useContext)(_exportContext.Context),
+      isSelected = function isSelected() {
+    return exportContext.data.includes.includes(props.type);
+  },
+      setIncludes = function setIncludes(event) {
+    var isChecked = event.target.checked,
+        actionType = isChecked ? 'ADD_INCLUDE' : 'REMOVE_INCLUDE';
+    exportContext.dispatch({
+      type: actionType,
+      payload: props.type
+    });
+  };
+
+  (0, _react.useEffect)(function () {
+    exportContext.dispatch({
+      type: 'ADD_INCLUDE',
+      payload: props.type
+    });
+  }, []);
+  return (0, _react.useMemo)(function () {
+    return /*#__PURE__*/_react.default.createElement(_checkbox.default, {
+      checked: isSelected(),
+      onChange: setIncludes,
+      className: props.className
+    });
+  }, [exportContext.data.includes]);
+}
+
+KitContentCheckbox.propTypes = {
+  className: PropTypes.string,
+  type: PropTypes.string.isRequired
+};
+KitContentCheckbox.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.js":
+/*!******************************************************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.js ***!
+  \******************************************************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = TemplatesFeatures;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! ./templates-features.scss */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.scss");
+
+function TemplatesFeatures(props) {
+  var _props$features$locke;
+
+  var featuresContainer = (0, _react.useRef)(null),
+      isLockedFeatures = (_props$features$locke = props.features.locked) === null || _props$features$locke === void 0 ? void 0 : _props$features$locke.length,
+      getLockedFeatures = function getLockedFeatures() {
+    if (!isLockedFeatures) {
+      return;
+    }
+
+    return /*#__PURE__*/_react.default.createElement("span", {
+      ref: featuresContainer,
+      className: props.isLocked ? 'e-app-export-templates-features__locked' : ''
+    }, ', ' + props.features.locked.join(', '));
+  },
+      getOpenFeatures = function getOpenFeatures() {
+    var _props$features$open;
+
+    return (_props$features$open = props.features.open) === null || _props$features$open === void 0 ? void 0 : _props$features$open.join(', ');
+  },
+      setTipsy = function setTipsy(showTooltip) {
+    var $featuresContainer = jQuery(featuresContainer.current),
+        displayMode = showTooltip ? 'show' : 'hide';
+
+    if ('show' === displayMode) {
+      $featuresContainer.tipsy({
+        trigger: 'manual',
+        gravity: 's',
+        offset: 19,
+        title: function title() {
+          return props.features.tooltip;
+        }
+      });
+    }
+
+    $featuresContainer.tipsy(displayMode);
+  };
+
+  (0, _react.useEffect)(function () {
+    var isFeaturesWithTipsy = isLockedFeatures && props.isTipsyLibReady;
+
+    if (isFeaturesWithTipsy) {
+      setTipsy(props.showTooltip);
+    }
+
+    return function () {
+      if (isFeaturesWithTipsy) {
+        setTipsy(false);
+      }
+    };
+  }, [props.showTooltip, props.isTipsyLibReady]);
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, getOpenFeatures(), getLockedFeatures());
+}
+
+TemplatesFeatures.propTypes = {
+  features: PropTypes.object,
+  isLocked: PropTypes.bool,
+  showTooltip: PropTypes.bool,
+  isTipsyLibReady: PropTypes.bool
+};
+TemplatesFeatures.defaultProps = {
+  showTooltip: false
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content-data/kit-content-data.js":
+/*!***************************************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content-data/kit-content-data.js ***!
+  \***************************************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 5:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = void 0;
+var kitContentData = [{
+  type: 'templates',
+  data: {
+    title: __('Templates', 'elementor'),
+    features: {
+      open: [__('Saved Templates', 'elementor')],
+      locked: [__('Headers', 'elementor'), __('Footers', 'elementor'), __('Archives', 'elementor'), __('Single Posts', 'elementor'), __('Single Pages', 'elementor'), __('Search Results', 'elementor'), __('404 Error Page', 'elementor'), __('Popups', 'elementor')],
+      tooltip: __('These components can only be exported with Elementor Pro', 'elementor')
+    }
+  }
+}, {
+  type: 'content',
+  data: {
+    title: __('Content', 'elementor'),
+    features: {
+      open: [__('Elementor Pages', 'elementor'), __('Landing Pages', 'elementor')]
+    }
+  }
+}, {
+  type: 'settings',
+  data: {
+    title: __('Site Settings', 'elementor'),
+    features: {
+      open: [__('Global Colors', 'elementor'), __('Global Fonts', 'elementor'), __('Theme Style settings', 'elementor'), __('Layout Settings', 'elementor'), __('Lightbox Settings', 'elementor'), __('Background Settings', 'elementor')]
+    }
+  }
+}];
+var _default = kitContentData;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.js":
+/*!*****************************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.js ***!
+  \*****************************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = KitContent;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "../node_modules/@babel/runtime-corejs2/helpers/defineProperty.js"));
+
+var _objectSpread3 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread2 */ "../node_modules/@babel/runtime-corejs2/helpers/objectSpread2.js"));
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _templatesFeatures = _interopRequireDefault(__webpack_require__(/*! ./components/templates-features/templates-features */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/templates-features/templates-features.js"));
+
+var _kitContentCheckbox = _interopRequireDefault(__webpack_require__(/*! ./components/kit-content-checkbox/kit-content-checkbox */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/components/kit-content-checkbox/kit-content-checkbox.js"));
+
+var _goProButton = _interopRequireDefault(__webpack_require__(/*! elementor-app/molecules/go-pro-button */ "../core/app/assets/js/molecules/go-pro-button.js"));
+
+var _box = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/box */ "../core/app/assets/js/ui/atoms/box.js"));
+
+var _list = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/list */ "../core/app/assets/js/ui/molecules/list.js"));
+
+var _heading = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/heading */ "../core/app/assets/js/ui/atoms/heading.js"));
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+var _grid = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/grid/grid */ "../core/app/assets/js/ui/grid/grid.js"));
+
+var _kitContentData = _interopRequireDefault(__webpack_require__(/*! ./kit-content-data/kit-content-data */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content-data/kit-content-data.js"));
+
+__webpack_require__(/*! ./kit-content.scss */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.scss");
+
+function KitContent() {
+  var hasPro = elementorAppConfig.hasPro,
+      _useState = (0, _react.useState)(false),
+      _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+      isTipsyLibReady = _useState2[0],
+      setIsTipsyLibReady = _useState2[1],
+      _useState3 = (0, _react.useState)({}),
+      _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
+      containerHover = _useState4[0],
+      setContainerHover = _useState4[1],
+      getTemplateFeatures = function getTemplateFeatures(features, index) {
+    if (!features) {
+      return;
+    }
+
+    return /*#__PURE__*/_react.default.createElement(_templatesFeatures.default, {
+      features: features,
+      isLocked: !hasPro,
+      showTooltip: containerHover[index],
+      isTipsyLibReady: isTipsyLibReady
+    });
+  },
+      getGoProButton = function getGoProButton() {
+    return /*#__PURE__*/_react.default.createElement(_goProButton.default, {
+      className: "e-app-export-kit-content__go-pro-button",
+      url: "https://go.elementor.com/go-pro-import-export"
+    });
+  },
+      setContainerHoverState = function setContainerHoverState(index, state) {
+    setContainerHover(function (prevState) {
+      return (0, _objectSpread3.default)((0, _objectSpread3.default)({}, prevState), {}, (0, _defineProperty2.default)({}, index, state));
+    });
+  };
+
+  (0, _react.useEffect)(function () {
+    if (!hasPro) {
+      import(
+      /* webpackIgnore: true */
+      "".concat(elementorCommon.config.urls.assets, "lib/tipsy/tipsy.min.js?ver=1.0.0")).then(function () {
+        return setIsTipsyLibReady(true);
+      });
+    }
+  }, []);
+  return /*#__PURE__*/_react.default.createElement(_box.default, null, /*#__PURE__*/_react.default.createElement(_list.default, {
+    separated: true,
+    className: "e-app-export-kit-content"
+  }, _kitContentData.default.map(function (item, index) {
+    var _item$data$features;
+
+    var isLockedFeaturesNoPro = ((_item$data$features = item.data.features) === null || _item$data$features === void 0 ? void 0 : _item$data$features.locked) && !hasPro;
+    return /*#__PURE__*/_react.default.createElement(_list.default.Item, {
+      separated: true,
+      padding: "20",
+      key: item.type,
+      className: "e-app-export-kit-content__item"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      onMouseEnter: function onMouseEnter() {
+        return isLockedFeaturesNoPro && setContainerHoverState(index, true);
+      },
+      onMouseLeave: function onMouseLeave() {
+        return isLockedFeaturesNoPro && setContainerHoverState(index, false);
+      }
+    }, /*#__PURE__*/_react.default.createElement(_grid.default, {
+      container: true,
+      noWrap: true
+    }, /*#__PURE__*/_react.default.createElement(_kitContentCheckbox.default, {
+      type: item.type,
+      className: "e-app-export-kit-content__checkbox"
+    }), /*#__PURE__*/_react.default.createElement(_grid.default, {
+      item: true
+    }, /*#__PURE__*/_react.default.createElement(_heading.default, {
+      variant: "h4",
+      tag: "h3",
+      className: "e-app-export-kit-content__title"
+    }, item.data.title), /*#__PURE__*/_react.default.createElement(_grid.default, {
+      item: true
+    }, /*#__PURE__*/_react.default.createElement(_text.default, {
+      variant: "sm",
+      tag: "span",
+      className: "e-app-export-kit-content__description"
+    }, item.data.description || getTemplateFeatures(item.data.features, index)), isLockedFeaturesNoPro && getGoProButton())))));
+  })));
+}
+
+KitContent.propTypes = {
+  className: PropTypes.string
+};
+KitContent.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/export/export-kit/export-kit.js":
+/*!*****************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/export/export-kit/export-kit.js ***!
+  \*****************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ExportKit;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../core/app/modules/import-export/assets/js/templates/layout.js"));
+
+var _pageHeader = _interopRequireDefault(__webpack_require__(/*! ../../../ui/page-header/page-header */ "../core/app/modules/import-export/assets/js/ui/page-header/page-header.js"));
+
+var _exportButton = _interopRequireDefault(__webpack_require__(/*! ./components/export-button/export-button */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/export-button/export-button.js"));
+
+var _kitContent = _interopRequireDefault(__webpack_require__(/*! ./components/kit-content/kit-content */ "../core/app/modules/import-export/assets/js/pages/export/export-kit/components/kit-content/kit-content.js"));
+
+var _inlineLink = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/inline-link */ "../core/app/assets/js/ui/molecules/inline-link.js"));
+
+var _wizardFooter = _interopRequireDefault(__webpack_require__(/*! elementor-app/organisms/wizard-footer */ "../core/app/assets/js/organisms/wizard-footer.js"));
+
+function ExportKit() {
+  var getFooter = function getFooter() {
+    return /*#__PURE__*/_react.default.createElement(_wizardFooter.default, {
+      separator: true,
+      justify: "end"
+    }, /*#__PURE__*/_react.default.createElement(_exportButton.default, null));
+  },
+      getLearnMoreLink = function getLearnMoreLink() {
+    return /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
+      url: "https://go.elementor.com/app-what-are-kits",
+      italic: true
+    }, __('Learn More', 'elementor'));
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_layout.default, {
+    type: "export",
+    footer: getFooter()
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "e-app-export-kit"
+  }, /*#__PURE__*/_react.default.createElement(_pageHeader.default, {
+    heading: __('Export Kits', 'elementor'),
+    description: [__('Choose which Elementor components - pages, site settings, headers, etc. - to include in your kit file.', 'elementor'), /*#__PURE__*/_react.default.createElement(_react.default.Fragment, {
+      key: "description-secondary-line"
+    }, __('By default, all of your components will be exported.', 'elementor'), " ", getLearnMoreLink())]
+  }), /*#__PURE__*/_react.default.createElement(_kitContent.default, null)));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.js":
+/*!*****************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.js ***!
+  \*****************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ImportKit;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
+
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+
+var _importContext = __webpack_require__(/*! ../../../context/import/import-context */ "../core/app/modules/import-export/assets/js/context/import/import-context.js");
+
+var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../core/app/modules/import-export/assets/js/templates/layout.js"));
+
+var _pageHeader = _interopRequireDefault(__webpack_require__(/*! ../../../ui/page-header/page-header */ "../core/app/modules/import-export/assets/js/ui/page-header/page-header.js"));
+
+var _importFailedDialog = _interopRequireDefault(__webpack_require__(/*! ../../../shared/import-failed-dialog/import-failed-dialog */ "../core/app/modules/import-export/assets/js/shared/import-failed-dialog/import-failed-dialog.js"));
+
+var _inlineLink = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/inline-link */ "../core/app/assets/js/ui/molecules/inline-link.js"));
+
+var _notice = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/notice */ "../core/app/assets/js/ui/molecules/notice.js"));
+
+var _dropZone = _interopRequireDefault(__webpack_require__(/*! elementor-app/organisms/drop-zone */ "../core/app/assets/js/organisms/drop-zone.js"));
+
+__webpack_require__(/*! ./import-kit.scss */ "../core/app/modules/import-export/assets/js/pages/import/import-kit/import-kit.scss");
+
+function ImportKit() {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+      isImportFailed = _useState2[0],
+      setIsImportFailed = _useState2[1],
+      importContext = (0, _react.useContext)(_importContext.Context),
+      navigate = (0, _router.useNavigate)(),
+      resetImportProcess = function resetImportProcess() {
+    importContext.dispatch({
+      type: 'SET_FILE',
+      payload: null
+    });
+    setIsImportFailed(false);
+  },
+      getLearnMoreLink = function getLearnMoreLink() {
+    return /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
+      url: "https://go.elementor.com/app-what-are-kits",
+      italic: true
+    }, __('Learn More', 'elementor'));
+  };
+
+  (0, _react.useEffect)(function () {
+    if (importContext.data.file) {
+      navigate('/import/process');
+    }
+  }, [importContext.data.file]);
+  return /*#__PURE__*/_react.default.createElement(_layout.default, {
+    type: "import"
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "e-app-import"
+  }, /*#__PURE__*/_react.default.createElement(_pageHeader.default, {
+    heading: __('Import Kits', 'elementor'),
+    description: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, __('Upload a file with Elementor components - pages, site settings, headers, etc. - so you can access them later and quickly apply them to your site.', 'elementor'), " ", getLearnMoreLink())
+  }), /*#__PURE__*/_react.default.createElement(_notice.default, {
+    label: __('Important', 'elementor'),
+    color: "warning",
+    className: "e-app-import__notice"
+  }, __('We recommend that you backup your site before importing a kit file.', 'elementor')), /*#__PURE__*/_react.default.createElement(_dropZone.default, {
+    className: "e-app-import__drop-zone",
+    heading: __('Upload Files to Your Library', 'elementor'),
+    text: __('Drag & drop the .zip file with your Kit', 'elementor'),
+    secondaryText: __('Or', 'elementor'),
+    filetypes: ['zip'],
+    onFileSelect: function onFileSelect(file) {
+      importContext.dispatch({
+        type: 'SET_FILE',
+        payload: file
+      });
+    },
+    onError: function onError() {
+      return setIsImportFailed(true);
+    }
+  }), isImportFailed && /*#__PURE__*/_react.default.createElement(_importFailedDialog.default, {
+    onRetry: resetImportProcess
+  })));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/import/import-process/import-process.js":
+/*!*************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/import/import-process/import-process.js ***!
+  \*************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 9:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ImportProcess;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+
+var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../core/app/modules/import-export/assets/js/templates/layout.js"));
+
+var _message = _interopRequireDefault(__webpack_require__(/*! ../../../ui/message/message */ "../core/app/modules/import-export/assets/js/ui/message/message.js"));
+
+var _importFailedDialog = _interopRequireDefault(__webpack_require__(/*! ../../../shared/import-failed-dialog/import-failed-dialog */ "../core/app/modules/import-export/assets/js/shared/import-failed-dialog/import-failed-dialog.js"));
+
+var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../core/app/assets/js/ui/atoms/icon.js"));
+
+var _heading = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/heading */ "../core/app/assets/js/ui/atoms/heading.js"));
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+var _importContext = __webpack_require__(/*! ../../../context/import/import-context */ "../core/app/modules/import-export/assets/js/context/import/import-context.js");
+
+var _useUploadFile2 = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-upload-file */ "../core/app/assets/js/hooks/use-upload-file.js"));
+
+__webpack_require__(/*! ./import-process-style.scss */ "../core/app/modules/import-export/assets/js/pages/import/import-process/import-process-style.scss");
+
+function ImportProcess() {
+  var _useUploadFile = (0, _useUploadFile2.default)('e_import_file', 'elementor_import_kit', {
+    include: ['templates', 'content', 'site-settings']
+  }),
+      uploadFileStatus = _useUploadFile.uploadFileStatus,
+      setUploadFile = _useUploadFile.setUploadFile,
+      importContext = (0, _react.useContext)(_importContext.Context),
+      navigate = (0, _router.useNavigate)(),
+      resetImportProcess = function resetImportProcess() {
+    importContext.dispatch({
+      type: 'SET_FILE',
+      payload: null
+    });
+    navigate('/import');
+  };
+
+  (0, _react.useEffect)(function () {
+    setUploadFile(importContext.data.file);
+  }, []);
+  (0, _react.useEffect)(function () {
+    if ('success' === uploadFileStatus.status) {
+      navigate('/import/success');
+    }
+  }, [uploadFileStatus]);
+  return /*#__PURE__*/_react.default.createElement(_layout.default, {
+    type: "import"
+  }, /*#__PURE__*/_react.default.createElement(_message.default, {
+    className: "e-app-import-process"
+  }, /*#__PURE__*/_react.default.createElement(_icon.default, {
+    className: "e-app-import-process__icon eicon-loading eicon-animation-spin"
+  }), /*#__PURE__*/_react.default.createElement(_heading.default, {
+    variant: "display-3",
+    className: "e-app-import-process__title"
+  }, __('Processing your file...', 'elementor')), /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xl",
+    className: "e-app-import-process__text"
+  }, __('This usually takes a few moments.', 'elementor'), /*#__PURE__*/_react.default.createElement("br", null), __('Don\'t close this window until your import is finished.', 'elementor')), 'error' === uploadFileStatus.status && /*#__PURE__*/_react.default.createElement(_importFailedDialog.default, {
+    onRetry: resetImportProcess
+  })));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/pages/import/import-success/import-success.js":
+/*!*************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/pages/import/import-success/import-success.js ***!
+  \*************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ImportSuccess;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../core/app/modules/import-export/assets/js/templates/layout.js"));
+
+var _wizardStep = _interopRequireDefault(__webpack_require__(/*! ../../../ui/wizard-step/wizard-step */ "../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.js"));
+
+var _inlineLink = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/inline-link */ "../core/app/assets/js/ui/molecules/inline-link.js"));
+
+var _dashboardButton = _interopRequireDefault(__webpack_require__(/*! elementor-app/molecules/dashboard-button */ "../core/app/assets/js/molecules/dashboard-button.js"));
+
+var _wizardFooter = _interopRequireDefault(__webpack_require__(/*! elementor-app/organisms/wizard-footer */ "../core/app/assets/js/organisms/wizard-footer.js"));
+
+function ImportSuccess() {
+  var getFooter = function getFooter() {
+    return /*#__PURE__*/_react.default.createElement(_wizardFooter.default, {
+      separator: true,
+      justify: "end"
+    }, /*#__PURE__*/_react.default.createElement(_dashboardButton.default, null));
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_layout.default, {
+    type: "import",
+    footer: getFooter()
+  }, /*#__PURE__*/_react.default.createElement(_wizardStep.default, {
+    image: elementorAppConfig.assets_url + 'images/go-pro.svg',
+    heading: __('Your file is ready!', 'elementor'),
+    description: __('You can find the components of this file in the Library.', 'elementor'),
+    notice: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
+      url: "https://go.elementor.com/app-what-are-kits",
+      italic: true
+    }, __('Click Here', 'elementor')), " ", __('to learn more about building your site with Elementor Kits', 'elementor'))
+  }));
+}
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.js":
+/*!*******************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.js ***!
+  \*******************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ContentLayout;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! ./content-layout.scss */ "../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.scss");
+
+function ContentLayout(props) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "e-app-import-export-content-layout"
+  }, props.children);
+}
+
+ContentLayout.propTypes = {
+  children: PropTypes.any.isRequired
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/shared/import-failed-dialog/import-failed-dialog.js":
+/*!*******************************************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/shared/import-failed-dialog/import-failed-dialog.js ***!
+  \*******************************************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = ImportFailedDialog;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _dialog = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/dialog/dialog */ "../core/app/assets/js/ui/dialog/dialog.js"));
+
+var _useAction = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-action */ "../core/app/assets/js/hooks/use-action.js"));
+
+function ImportFailedDialog(props) {
+  var action = (0, _useAction.default)();
+  return /*#__PURE__*/_react.default.createElement(_dialog.default, {
+    title: __('Something went wrong', 'elementor'),
+    text: __('Nothing to worry about, just try again. If the problem continues, head over to the Help Center.', 'elementor'),
+    approveButtonColor: "primary",
+    approveButtonText: __('Retry', 'elementor'),
+    approveButtonOnClick: props.onRetry,
+    dismissButtonText: __('Exit', 'elementor'),
+    dismissButtonOnClick: action.backToDashboard
+  });
+}
+
+ImportFailedDialog.propTypes = {
+  onRetry: PropTypes.func.isRequired
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/templates/layout.js":
+/*!***********************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/templates/layout.js ***!
+  \***********************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Layout;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _page = _interopRequireDefault(__webpack_require__(/*! elementor-app/layout/page */ "../core/app/assets/js/layout/page.js"));
+
+var _contentLayout = _interopRequireDefault(__webpack_require__(/*! ../shared/content-layout/content-layout */ "../core/app/modules/import-export/assets/js/shared/content-layout/content-layout.js"));
+
+function Layout(props) {
+  var config = {
+    title: 'import' === props.type ? __('Import', 'elementor') : __('Export', 'elementor'),
+    headerButtons: props.headerButtons,
+    content: /*#__PURE__*/_react.default.createElement(_contentLayout.default, null, props.children),
+    footer: props.footer
+  };
+  return /*#__PURE__*/_react.default.createElement(_page.default, config);
+}
+
+Layout.propTypes = {
+  type: PropTypes.string.isRequired,
+  headerButtons: PropTypes.arrayOf(PropTypes.object),
+  children: PropTypes.object.isRequired,
+  footer: PropTypes.object
+};
+Layout.defaultProps = {
+  headerButtons: []
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/message/message.js":
+/*!*************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/message/message.js ***!
+  \*************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = Message;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+__webpack_require__(/*! ./message.scss */ "../core/app/modules/import-export/assets/js/ui/message/message.scss");
+
+function Message(props) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "e-app-import-export-message ".concat(props.className)
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "e-app-import-export-message__content"
+  }, props.children));
+}
+
+Message.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any.isRequired
+};
+Message.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/page-header/page-header.js":
+/*!*********************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/page-header/page-header.js ***!
+  \*********************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = PageHeader;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _isArray = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _grid = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/grid/grid */ "../core/app/assets/js/ui/grid/grid.js"));
+
+var _heading = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/heading */ "../core/app/assets/js/ui/atoms/heading.js"));
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+__webpack_require__(/*! ./page-header.scss */ "../core/app/modules/import-export/assets/js/ui/page-header/page-header.scss");
+
+// Page header.
+function PageHeader(props) {
+  var baseClassName = 'e-app-import-export-page-header',
+      classes = [baseClassName, props.className];
+
+  var handleMultiLine = function handleMultiLine(content) {
+    if ((0, _isArray.default)(content)) {
+      var multiLineArray = [];
+      content.forEach(function (line, index) {
+        if (index) {
+          multiLineArray.push( /*#__PURE__*/_react.default.createElement("br", {
+            key: index
+          }));
+        }
+
+        multiLineArray.push(line);
+      });
+      return multiLineArray;
+    }
+
+    return content;
+  };
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: (0, _utils.arrayToClassName)(classes)
+  }, /*#__PURE__*/_react.default.createElement(_grid.default, {
+    container: true
+  }, /*#__PURE__*/_react.default.createElement(_grid.default, {
+    item: true,
+    className: "e-app-import-export-page-header__content-wrapper"
+  }, props.heading && /*#__PURE__*/_react.default.createElement(_heading.default, {
+    variant: "display-3",
+    className: "e-app-import-export-page-header__heading"
+  }, props.heading), props.description && /*#__PURE__*/_react.default.createElement(_text.default, {
+    className: "e-app-import-export-page-header__description"
+  }, handleMultiLine(props.description)))));
+}
+
+PageHeader.propTypes = {
+  className: PropTypes.string,
+  heading: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.object])
+};
+PageHeader.defaultProps = {
+  className: ''
+};
+
+/***/ }),
+
+/***/ "../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.js":
+/*!*********************************************************************************!*\
+  !*** ../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.js ***!
+  \*********************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 7:23-30 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "../node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = WizardStep;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../core/app/assets/js/utils/utils.js");
+
+var _grid = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/grid/grid */ "../core/app/assets/js/ui/grid/grid.js"));
+
+var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../core/app/assets/js/ui/atoms/icon.js"));
+
+var _heading = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/heading */ "../core/app/assets/js/ui/atoms/heading.js"));
+
+var _text = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/text */ "../core/app/assets/js/ui/atoms/text.js"));
+
+__webpack_require__(/*! ./wizard-step.scss */ "../core/app/modules/import-export/assets/js/ui/wizard-step/wizard-step.scss");
+
+function WizardStep(props) {
+  var baseClassName = 'e-app-import-export-wizard-step',
+      classes = [baseClassName, props.className];
+  return /*#__PURE__*/_react.default.createElement(_grid.default, {
+    className: (0, _utils.arrayToClassName)(classes),
+    justify: "center",
+    container: true
+  }, /*#__PURE__*/_react.default.createElement(_grid.default, {
+    item: true
+  }, props.image && /*#__PURE__*/_react.default.createElement(_grid.default, {
+    className: "e-app-import-export-wizard-step__image-container",
+    justify: "center",
+    alignItems: "end",
+    container: true
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "e-app-import-export-wizard-step__image",
+    src: props.image
+  })), props.icon && /*#__PURE__*/_react.default.createElement(_icon.default, {
+    className: "e-app-import-export-wizard-step__icon ".concat(props.icon)
+  }), props.heading && /*#__PURE__*/_react.default.createElement(_heading.default, {
+    variant: "display-3",
+    className: "e-app-import-export-wizard-step__heading"
+  }, props.heading), props.description && /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xl",
+    className: "e-app-import-export-wizard-step__description"
+  }, props.description), props.notice && /*#__PURE__*/_react.default.createElement(_text.default, {
+    variant: "xs",
+    className: "e-app-import-export-wizard-step__notice"
+  }, props.notice)));
+}
+
+WizardStep.propTypes = {
+  className: PropTypes.string,
+  image: PropTypes.string,
+  icon: PropTypes.string,
+  heading: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  notice: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+};
+WizardStep.defaultProps = {
+  className: ''
+};
 
 /***/ }),
 
@@ -6484,6 +10178,26 @@ exports.default = Utils;
 module.exports = function (it) {
   if (typeof it != 'function') throw TypeError(it + ' is not a function!');
   return it;
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_add-to-unscopables.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/modules/_add-to-unscopables.js ***!
+  \**************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// 22.1.3.31 Array.prototype[@@unscopables]
+var UNSCOPABLES = __webpack_require__(/*! ./_wks */ "../node_modules/core-js/modules/_wks.js")('unscopables');
+var ArrayProto = Array.prototype;
+if (ArrayProto[UNSCOPABLES] == undefined) __webpack_require__(/*! ./_hide */ "../node_modules/core-js/modules/_hide.js")(ArrayProto, UNSCOPABLES, {});
+module.exports = function (key) {
+  ArrayProto[UNSCOPABLES][key] = true;
 };
 
 
@@ -6524,6 +10238,42 @@ var isObject = __webpack_require__(/*! ./_is-object */ "../node_modules/core-js/
 module.exports = function (it) {
   if (!isObject(it)) throw TypeError(it + ' is not an object!');
   return it;
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_array-includes.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/modules/_array-includes.js ***!
+  \**********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// false -> Array#indexOf
+// true  -> Array#includes
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "../node_modules/core-js/modules/_to-iobject.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "../node_modules/core-js/modules/_to-length.js");
+var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ "../node_modules/core-js/modules/_to-absolute-index.js");
+module.exports = function (IS_INCLUDES) {
+  return function ($this, el, fromIndex) {
+    var O = toIObject($this);
+    var length = toLength(O.length);
+    var index = toAbsoluteIndex(fromIndex, length);
+    var value;
+    // Array#includes uses SameValueZero equality algorithm
+    // eslint-disable-next-line no-self-compare
+    if (IS_INCLUDES && el != el) while (length > index) {
+      value = O[index++];
+      // eslint-disable-next-line no-self-compare
+      if (value != value) return true;
+    // Array#indexOf ignores holes, Array#includes - not
+    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {
+      if (O[index] === el) return IS_INCLUDES || index || 0;
+    } return !IS_INCLUDES && -1;
+  };
 };
 
 
@@ -6738,6 +10488,31 @@ $export.W = 32;  // wrap
 $export.U = 64;  // safe
 $export.R = 128; // real proto method for `library`
 module.exports = $export;
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_fails-is-regexp.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/modules/_fails-is-regexp.js ***!
+  \***********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var MATCH = __webpack_require__(/*! ./_wks */ "../node_modules/core-js/modules/_wks.js")('match');
+module.exports = function (KEY) {
+  var re = /./;
+  try {
+    '/./'[KEY](re);
+  } catch (e) {
+    try {
+      re[MATCH] = false;
+      return !'/./'[KEY](re);
+    } catch (f) { /* empty */ }
+  } return true;
+};
 
 
 /***/ }),
@@ -6982,6 +10757,25 @@ module.exports = __webpack_require__(/*! ./_descriptors */ "../node_modules/core
 module.exports = !__webpack_require__(/*! ./_descriptors */ "../node_modules/core-js/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "../node_modules/core-js/modules/_fails.js")(function () {
   return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "../node_modules/core-js/modules/_dom-create.js")('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_iobject.js":
+/*!***************************************************!*\
+  !*** ../node_modules/core-js/modules/_iobject.js ***!
+  \***************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// fallback for non-array-like ES3 and non-enumerable old V8 strings
+var cof = __webpack_require__(/*! ./_cof */ "../node_modules/core-js/modules/_cof.js");
+// eslint-disable-next-line no-prototype-builtins
+module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
+  return cof(it) == 'String' ? it.split('') : Object(it);
+};
 
 
 /***/ }),
@@ -7316,6 +11110,47 @@ module.exports = function (TO_STRING) {
 
 /***/ }),
 
+/***/ "../node_modules/core-js/modules/_string-context.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/modules/_string-context.js ***!
+  \**********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// helper for String#{startsWith, endsWith, includes}
+var isRegExp = __webpack_require__(/*! ./_is-regexp */ "../node_modules/core-js/modules/_is-regexp.js");
+var defined = __webpack_require__(/*! ./_defined */ "../node_modules/core-js/modules/_defined.js");
+
+module.exports = function (that, searchString, NAME) {
+  if (isRegExp(searchString)) throw TypeError('String#' + NAME + " doesn't accept regex!");
+  return String(defined(that));
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_to-absolute-index.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/modules/_to-absolute-index.js ***!
+  \*************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var toInteger = __webpack_require__(/*! ./_to-integer */ "../node_modules/core-js/modules/_to-integer.js");
+var max = Math.max;
+var min = Math.min;
+module.exports = function (index, length) {
+  index = toInteger(index);
+  return index < 0 ? max(index + length, 0) : min(index, length);
+};
+
+
+/***/ }),
+
 /***/ "../node_modules/core-js/modules/_to-integer.js":
 /*!******************************************************!*\
   !*** ../node_modules/core-js/modules/_to-integer.js ***!
@@ -7330,6 +11165,25 @@ var ceil = Math.ceil;
 var floor = Math.floor;
 module.exports = function (it) {
   return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/_to-iobject.js":
+/*!******************************************************!*\
+  !*** ../node_modules/core-js/modules/_to-iobject.js ***!
+  \******************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// to indexed object, toObject with fallback for non-array-like ES3 strings
+var IObject = __webpack_require__(/*! ./_iobject */ "../node_modules/core-js/modules/_iobject.js");
+var defined = __webpack_require__(/*! ./_defined */ "../node_modules/core-js/modules/_defined.js");
+module.exports = function (it) {
+  return IObject(defined(it));
 };
 
 
@@ -7439,6 +11293,57 @@ $exports.store = store;
 
 /***/ }),
 
+/***/ "../node_modules/core-js/modules/es6.function.name.js":
+/*!************************************************************!*\
+  !*** ../node_modules/core-js/modules/es6.function.name.js ***!
+  \************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var dP = __webpack_require__(/*! ./_object-dp */ "../node_modules/core-js/modules/_object-dp.js").f;
+var FProto = Function.prototype;
+var nameRE = /^\s*function ([^ (]*)/;
+var NAME = 'name';
+
+// 19.2.4.2 name
+NAME in FProto || __webpack_require__(/*! ./_descriptors */ "../node_modules/core-js/modules/_descriptors.js") && dP(FProto, NAME, {
+  configurable: true,
+  get: function () {
+    try {
+      return ('' + this).match(nameRE)[1];
+    } catch (e) {
+      return '';
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es6.object.to-string.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/modules/es6.object.to-string.js ***!
+  \***************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+// 19.1.3.6 Object.prototype.toString()
+var classof = __webpack_require__(/*! ./_classof */ "../node_modules/core-js/modules/_classof.js");
+var test = {};
+test[__webpack_require__(/*! ./_wks */ "../node_modules/core-js/modules/_wks.js")('toStringTag')] = 'z';
+if (test + '' != '[object z]') {
+  __webpack_require__(/*! ./_redefine */ "../node_modules/core-js/modules/_redefine.js")(Object.prototype, 'toString', function toString() {
+    return '[object ' + classof(this) + ']';
+  }, true);
+}
+
+
+/***/ }),
+
 /***/ "../node_modules/core-js/modules/es6.regexp.exec.js":
 /*!**********************************************************!*\
   !*** ../node_modules/core-js/modules/es6.regexp.exec.js ***!
@@ -7456,6 +11361,23 @@ __webpack_require__(/*! ./_export */ "../node_modules/core-js/modules/_export.js
   forced: regexpExec !== /./.exec
 }, {
   exec: regexpExec
+});
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es6.regexp.flags.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/modules/es6.regexp.flags.js ***!
+  \***********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// 21.2.5.3 get RegExp.prototype.flags()
+if (__webpack_require__(/*! ./_descriptors */ "../node_modules/core-js/modules/_descriptors.js") && /./g.flags != 'g') __webpack_require__(/*! ./_object-dp */ "../node_modules/core-js/modules/_object-dp.js").f(RegExp.prototype, 'flags', {
+  configurable: true,
+  get: __webpack_require__(/*! ./_flags */ "../node_modules/core-js/modules/_flags.js")
 });
 
 
@@ -7788,6 +11710,94 @@ __webpack_require__(/*! ./_fix-re-wks */ "../node_modules/core-js/modules/_fix-r
     }
   ];
 });
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es6.regexp.to-string.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/modules/es6.regexp.to-string.js ***!
+  \***************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+__webpack_require__(/*! ./es6.regexp.flags */ "../node_modules/core-js/modules/es6.regexp.flags.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "../node_modules/core-js/modules/_an-object.js");
+var $flags = __webpack_require__(/*! ./_flags */ "../node_modules/core-js/modules/_flags.js");
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "../node_modules/core-js/modules/_descriptors.js");
+var TO_STRING = 'toString';
+var $toString = /./[TO_STRING];
+
+var define = function (fn) {
+  __webpack_require__(/*! ./_redefine */ "../node_modules/core-js/modules/_redefine.js")(RegExp.prototype, TO_STRING, fn, true);
+};
+
+// 21.2.5.14 RegExp.prototype.toString()
+if (__webpack_require__(/*! ./_fails */ "../node_modules/core-js/modules/_fails.js")(function () { return $toString.call({ source: 'a', flags: 'b' }) != '/a/b'; })) {
+  define(function toString() {
+    var R = anObject(this);
+    return '/'.concat(R.source, '/',
+      'flags' in R ? R.flags : !DESCRIPTORS && R instanceof RegExp ? $flags.call(R) : undefined);
+  });
+// FF44- RegExp#toString has a wrong name
+} else if ($toString.name != TO_STRING) {
+  define(function toString() {
+    return $toString.call(this);
+  });
+}
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es6.string.includes.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/modules/es6.string.includes.js ***!
+  \**************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+// 21.1.3.7 String.prototype.includes(searchString, position = 0)
+
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/core-js/modules/_export.js");
+var context = __webpack_require__(/*! ./_string-context */ "../node_modules/core-js/modules/_string-context.js");
+var INCLUDES = 'includes';
+
+$export($export.P + $export.F * __webpack_require__(/*! ./_fails-is-regexp */ "../node_modules/core-js/modules/_fails-is-regexp.js")(INCLUDES), 'String', {
+  includes: function includes(searchString /* , position = 0 */) {
+    return !!~context(this, searchString, INCLUDES)
+      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es7.array.includes.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/modules/es7.array.includes.js ***!
+  \*************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_require__ */
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+// https://github.com/tc39/Array.prototype.includes
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/core-js/modules/_export.js");
+var $includes = __webpack_require__(/*! ./_array-includes */ "../node_modules/core-js/modules/_array-includes.js")(true);
+
+$export($export.P, 'Array', {
+  includes: function includes(el /* , fromIndex = 0 */) {
+    return $includes(this, el, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+__webpack_require__(/*! ./_add-to-unscopables */ "../node_modules/core-js/modules/_add-to-unscopables.js")('includes');
 
 
 /***/ }),
@@ -9776,7 +13786,10 @@ var _app = _interopRequireDefault(__webpack_require__(/*! ./app */ "../core/app/
 
 var _siteEditor = __webpack_require__(/*! @elementor/site-editor */ "@elementor/site-editor");
 
+var _module = _interopRequireDefault(__webpack_require__(/*! ../../modules/import-export/assets/js/module */ "../core/app/modules/import-export/assets/js/module.js"));
+
 new _siteEditor.Module();
+new _module.default();
 var AppWrapper = elementorCommon.config.isDebug ? _react.default.StrictMode : _react.default.Fragment;
 ReactDOM.render( /*#__PURE__*/_react.default.createElement(AppWrapper, null, /*#__PURE__*/_react.default.createElement(_app.default, null)), document.getElementById('e-app'));
 })();

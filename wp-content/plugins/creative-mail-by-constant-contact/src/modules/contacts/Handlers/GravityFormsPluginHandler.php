@@ -11,17 +11,22 @@ use CreativeMail\Modules\Contacts\Models\OptActionBy;
 class GravityFormsPluginHandler extends BaseContactFormPluginHandler
 {
     private $textFormFields = array('text', 'textarea');
-    private $emailNames = array('e-mail', 'email', 'emailaddress', 'email address', 'e-mail address', 'email-address');
 
     public function convertToContactModel($user)
     {
         $contactModel = new ContactModel();
 
         $contactModel->setEventType(CE4WP_GF_EVENTTYPE);
-        //optin true on sync, false on form submission
-        $contactModel->setOptIn($user->opt_in);
-        $contactModel->setOptOut(false);
-        $contactModel->setOptActionBy(OptActionBy::Owner);
+
+        if ($user->isSync) { //If its a DB sync we set optin on true, action by owner
+            $contactModel->setOptIn(true);
+            $contactModel->setOptOut(false);
+            $contactModel->setOptActionBy(OptActionBy::Owner);
+        } else {
+            //Get contact data from submission
+            $contactModel->setOptIn(boolval($user->consent));
+            $contactModel->setOptActionBy(OptActionBy::Visitor);
+        }
 
         $email = $user->email;
         if (!empty($email)) {
@@ -41,6 +46,12 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
                 $lastName = implode(' ', [$insertion, $lastName]);
             }
             $contactModel->setLastName($lastName);
+        }
+        if (!empty($user->phone)) {
+            $contactModel->setPhone($user->phone);
+        }
+        if (!empty($user->birthday)) {
+            $contactModel->set_birthday($user->birthday);
         }
 
         return $contactModel;
@@ -93,7 +104,7 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
         }
         //Else check if we can find an email value in text fields
         foreach ($form['fields'] as $field) {
-            if (in_array(strtolower($field["type"]), $this->textFormFields) && in_array(strtolower($field["label"]), $this->emailNames)) {
+            if (in_array(strtolower($field["type"]), $this->textFormFields) && in_array(strtolower($field["label"]), $this->emailFields)) {
                 $possibleEmail = rgar($entry, $field["id"]);
                 if (filter_var($possibleEmail, FILTER_VALIDATE_EMAIL)) {
                     return $possibleEmail;
@@ -103,17 +114,31 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
         return $email;
     }
 
+    private function FindFormData($contact, $entry, $form)
+    {
+        foreach ($form['fields'] as $field) {
+            if (strtolower($field["type"]) === 'phone' && in_array(strtolower($field["label"]), $this->phoneFields)) {
+                $contact->phone = rgar($entry, $field["id"]);
+            } elseif (strtolower($field["type"]) === 'date' && in_array(strtolower($field["label"]), $this->birthdayFields)) {
+                $contact->birthday = rgar($entry, $field["id"]);
+            } elseif (strtolower($field["type"]) === 'consent' && strtolower($field["label"]) === 'consent') {
+                $contact->consent = rgar($entry, (string)($field["id"] + .1)); //consent values in the entry are weird
+            }
+        }
+    }
+
     public function ceHandleGravityFormSubmission($entry, $form)
     {
         try {
             $contact = new \stdClass();
             $contact->name = $this->GetNameValuesFromForm($entry, $form);
             $contact->email = $this->GetEmailFromForm($entry, $form);
+            $this->FindFormData($contact, $entry, $form);
             if (empty($contact->email)) {
                 return;
-            };
+            }
 
-            $contact->opt_in = false;
+            $contact->isSync = false;
             $this->upsertContact($this->convertToContactModel($contact));
         } catch (\Exception $exception) {
             RaygunManager::get_instance()->exception_handler($exception);
@@ -123,18 +148,14 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('gform_after_submission', array($this, 'ceHandleGravityFormSubmission'), 10, 2);
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('gform_after_submission', array($this, 'ceHandleGravityFormSubmission'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         if (!is_int($limit) || $limit <= 0) {
             $limit = null;
@@ -178,10 +199,10 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
                         continue;
                     }
                     $contact->name = $this->GetNameValuesFromForm($entry, $formArray);
-                    $contact->opt_in = true;
+                    $this->FindFormData($contact, $entry, $formArray);
+                    $contact->isSync = true;
 
                     //Convert to contactModel
-
                     $contactModel = null;
                     try {
                         $contactModel = $this->convertToContactModel($contact);
@@ -204,15 +225,10 @@ class GravityFormsPluginHandler extends BaseContactFormPluginHandler
         }
 
         if (!empty($contactsArray)) {
-            $batches = array_chunk($contactsArray, CE4WP_BATCH_SIZE);
-            foreach ($batches as $batch) {
-                try {
-                    $this->batchUpsertContacts($batch);
-                } catch (\Exception $exception) {
-                    RaygunManager::get_instance()->exception_handler($exception);
-                }
-            }
+            return $contactsArray;
         }
+
+        return null;
     }
 
     function __construct()

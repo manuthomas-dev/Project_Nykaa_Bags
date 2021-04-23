@@ -1,4 +1,4 @@
-/*! elementor - v3.1.4 - 10-03-2021 */
+/*! elementor - v3.2.1 - 21-04-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["text-editor"],{
 
 /***/ "../assets/dev/js/frontend/handlers/text-editor.js":

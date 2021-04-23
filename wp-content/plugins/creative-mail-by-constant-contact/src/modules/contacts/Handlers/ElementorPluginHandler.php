@@ -19,21 +19,24 @@ class ElementorPluginHandler extends BaseContactFormPluginHandler
     {
         foreach ($fields as $field) {
             //Try to find a name value based on the default Elementor form with name field
-            if(array_key_exists('type', $field) && ($field['type'] === "text" && $field['id'] === "name")) {
+            if (array_key_exists('type', $field) && ($field['type'] === "text" && $field['id'] === "name")) {
                 return $field["value"];
             }
         }
         return null;
     }
 
-    private function GetEmailFromForm($fields)
+    private function FindFormData($elemContact, $fields)
     {
         foreach ($fields as $field) {
-            if(array_key_exists('type', $field) && $field['type'] === "email") {
-                return $field["value"];
+            if (array_key_exists('type', $field) && in_array($field['type'], $this->emailFields)) {
+                $elemContact->email = $field["value"];
+            } elseif (array_key_exists('type', $field) && in_array($field['type'], $this->phoneFields)) {
+                $elemContact->phone = $field["value"];
+            } elseif (array_key_exists('type', $field) && $field['type'] === 'date' && in_array(strtolower($field['title']), $this->birthdayFields)) {
+                $elemContact->birthday = $field["value"];
             }
         }
-        return null;
     }
 
     public function convertToContactModel($contact)
@@ -44,11 +47,10 @@ class ElementorPluginHandler extends BaseContactFormPluginHandler
 
         $contactModel->setOptIn(false);
         $contactModel->setOptOut(false);
-        $contactModel->setOptActionBy(OptActionBy::Owner);
+        $contactModel->setOptActionBy(OptActionBy::Visitor);
 
-        $email = $contact->email;
-        if (!empty($email)) {
-            $contactModel->setEmail($email);
+        if (!empty($contact->email)) {
+            $contactModel->setEmail($contact->email);
         }
 
         $values = explode(' ', $contact->name);
@@ -61,7 +63,12 @@ class ElementorPluginHandler extends BaseContactFormPluginHandler
         if (!empty($lastName)) {
             $contactModel->setLastName($lastName);
         }
-
+        if (!empty($contact->phone)) {
+            $contactModel->setPhone($contact->phone);
+        }
+        if (!empty($contact->birthday)) {
+            $contactModel->set_birthday($contact->birthday);
+        }
         return $contactModel;
     }
 
@@ -71,10 +78,13 @@ class ElementorPluginHandler extends BaseContactFormPluginHandler
             $fields = $record->get("fields");
             $elemContact = new \stdClass();
             $elemContact->name = $this->GetNameFromForm($fields);
-            $elemContact->email = $this->GetEmailFromForm($fields);
+
+            //attempt to get additional data
+            $this->FindFormData($elemContact, $fields);
             if (empty($elemContact->email)) {
                 return;
-            };
+            }
+
             $this->upsertContact($this->convertToContactModel($elemContact));
         } catch (\Exception $exception) {
             RaygunManager::get_instance()->exception_handler($exception);
@@ -84,19 +94,16 @@ class ElementorPluginHandler extends BaseContactFormPluginHandler
     public function registerHooks()
     {
         add_action('elementor_pro/forms/mail_sent', array($this, 'ceHandleElementorFormSubmission'), 10, 2);
-        // add hook function to synchronize
-        add_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
     public function unregisterHooks()
     {
         remove_action('elementor_pro/forms/mail_sent', array($this, 'ceHandleElementorFormSubmission'));
-        // remove hook function to synchronize
-        remove_action(CE4WP_SYNCHRONIZE_ACTION, array($this, 'syncAction'));
     }
 
-    public function syncAction($limit = null)
+    public function get_contacts($limit = null)
     {
         //Elementor seems to not store form submissions locally
+        return null;
     }
 }
