@@ -1,0 +1,330 @@
+2021-04-24T17:14:18+00:00 CRITICAL Uncaught WooCommerce\PayPalCommerce\ApiClient\Exception\PayPalApiException: [INVALID_REQUEST] Request is not well-formed, syntactically incorrect, or violates schema. in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\Render\class-onboardingrenderer.php(66): WooCommerce\PayPalCommerce\ApiClient\Endpoint\PartnerReferrals->signup_link()
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(311): WooCommerce\PayPalCommerce\Onboarding\Render\OnboardingRenderer->get_signup_link(true)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(124): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->generate_signup_link('production', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(1139): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->get_params(Object(WP_REST_Request))
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-paypal/v1/o...', Array, NULL)
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api.php(354): WP_REST_Server->serve_request('/wc-paypal/v1/o...')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp.php(750): WP->parse_request('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\functions.php(1291): WP->main('')
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-blog-header.php(16): wp()
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php on line 112
+
+2021-04-24T17:20:47+00:00 CRITICAL Uncaught WooCommerce\PayPalCommerce\ApiClient\Exception\PayPalApiException: [INVALID_REQUEST] Request is not well-formed, syntactically incorrect, or violates schema. in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\Render\class-onboardingrenderer.php(66): WooCommerce\PayPalCommerce\ApiClient\Endpoint\PartnerReferrals->signup_link()
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(311): WooCommerce\PayPalCommerce\Onboarding\Render\OnboardingRenderer->get_signup_link(true)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(124): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->generate_signup_link('production', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(1139): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->get_params(Object(WP_REST_Request))
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-paypal/v1/o...', Array, NULL)
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api\class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\rest-api.php(354): WP_REST_Server->serve_request('/wc-paypal/v1/o...')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp.php(750): WP->parse_request('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\functions.php(1291): WP->main('')
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-blog-header.php(16): wp()
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php on line 112
+
+2021-04-24T18:25:25+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(55, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:25:25+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(56, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:26:27+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(58, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:26:29+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(59, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:27:44+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(62, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:28:46+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(63, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:30:59+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(65, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:32:03+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(66, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:33:10+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(67, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:34:18+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(68, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:35:20+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(69, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:39:01+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(70, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:40:33+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(71, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:41:50+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(72, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:42:53+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(73, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:45:10+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(74, 'Async Request')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
+2021-04-24T18:47:17+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(75, 'WP Cron')
+#5 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\wordpress\Project_Nykaa_Bags\wp-includes\class-wp-hook.php on line 292
+
